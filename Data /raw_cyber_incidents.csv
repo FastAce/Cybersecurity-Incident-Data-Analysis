@@ -1,0 +1,316 @@
+Incident_ID,Date_Incident,Region,Department_Affected,Asset_Type,Incident_Type,Severity,Priority,Detection_Source,Status,Time_to_Detect_min,Time_to_Contain_min,Time_to_Resolve_min,Business_Impact,Downtime_min,Estimated_Cost_EUR,Root_Cause,Data_Sensitivity,SLA_Breached,Analyst
+INC-20240001,2024-12-02 05:04:49,Luxembourg,Procurement,Server,Unauthorized Access,  Low  ,P4 - Low,,In Progress,204 min,78,495,Minor,39 min,336,Weak Password,Public,Yes,A. Weber
+INC-20240002,2025-06-21 08:01:33,Germany,Sales,Workstation,Unauthorized Access,High,P2 - High,Threat Intel,Resolved,1606,1443,4153,Moderate,-887,33999,Insider Error,Internal,No,L. Müller
+INC-20240003,2024-07-26 13:04:12,France,Sales,Workstation,Lost/Stolen Device,Medium,  P3 - Medium  ,Audit,In Progress,175,207,479,None,0,2479,,Restricted,No,E. Bernard
+INC-20240004,2024-10-31 02:31:56,Luxembourg,Operations,  Email Account  ,Misconfiguration,Medium,P3 - Medium,SIEM,Resolved,207,79,534,Moderate,170,887,Lost/Stolen,,No,C. Schmidt
+INC-20240005,2024-06-30 22:10:40,Belgium,Procurement,Cloud Service,Phishing,Low,P4 - Low,User Report,In Progress,97,34,676,Moderate,166,374,Social Engineering,Restricted,No,L. Müller
+INC-20240006,2024-12-08 01:10:07,France,R&D,Email Account,Data Exfiltration,Critical,critical (P1),SIEM,Eradicated,1710,1425,8003,Moderate,2555 min,105884,  Third-Party Supplier  ,Confidential,No,J. Becker
+INC-20240007,2025-01-14 05:05:01,  Belgium  ,Procurement,Email Account,  Malware  ,Critical,P1 - Critical,Audit,Resolved,566,622,2007,Minor,155,102816,Third-Party Supplier,Internal,Yes,S. Rossi
+INC-20240008,2024-08-08 05:33:53,Belgium,R&D,Server,Ransomware,  Medium  ,P3 - Medium,EDR,Eradicated,1006,543,-692,None,0,6160 EUR,,Internal,No,A. Weber
+INC-20240009,2025-01-16 23:20:12,France,  Finance  ,Email Account,  Data Exfiltration  ,Medium,P3 - Medium,EDR,Contained,366,516,2915,Moderate,658,3042,Weak Password,Restricted,No,E. Bernard
+INC-20240010,04/08/2024 22:45,France,Procurement,Cloud Service,Lost/Stolen Device,High,p2-high,User Report,Eradicated,565,373,1322,Minor,123,8444,Unpatched Vulnerability,Internal,,A. Weber
+INC-20240011,2025-04-24 11:11:46,Belgium,IT,Cloud Service,Unauthorised Access,High,P2 - High,Email Gateway,  Resolved  ,447,684,1982,None,0,26936,,Confidential,No,S. Rossi
+INC-20240012,2025-01-14 19:12:43,Germany,Operations,Cloud Service,Phising,  Medium  ,P3 - Medium,Audit,Eradicated,106,115,935,Minor,-65,€ 2745,Insider Error,,  No  ,J. Becker
+INC-20240013,2024-12-09 21:25:28,Belgium,IT,Server,Phishing,Low,P4 - Low,Audit,Resolved,163,86,130,Minor,15,429,Unpatched Vulnerability,  Public  ,Yes,C. Schmidt
+INC-20240014,2024-11-23 19:37:58,Belgium,Facilities,Cloud Service,Phishing,Low,P4 - Low,Threat Intel,In Progress,124,55,251,Moderate,66,263 EUR,Misconfiguration,,Yes,N. Laurent
+INC-20240015,2024-06-12 23:47:29,Luxembourg,IT,  Database  ,Mal-ware,Medium,P3 - Medium,,Eradicated,431,461,896,Moderate,207,3775,Lost/Stolen,Public,Yes,J. Becker
+INC-20240016,2024-07-04 16:08:02,Luxembourg,IT,Workstation,  Phishing  ,Low,P4 - Low,SIEM,Resolved,161,64,543,Minor,63,358,Lost/Stolen,,,J. Becker
+INC-20240017,2025-05-11 00:04:42,Germany,Sales,Application,Phising,Low,P4 - Low,IDS/IPS,In Progress,30,65,182,None,0,364,Insider Error,Restricted,No,J. Becker
+INC-20240018,2024-06-19 11:25:04,Luxembourg,IT,Application,Phishing,Low,P4 - Low,Email Gateway,Resolved,172,87,481,Major,273,516,Third-Party Supplier,Internal,  No  ,M. Dupont
+INC-20240019,2024-12-14 14:42:03,Luxembourg,Operations,Workstation,Misconfig,Low,P4 - Low,Email Gateway,Contained,55,-29,266,None,0,€ 161,Insider Error,Internal,No,E. Bernard
+INC-20240020,2025-05-28 04:45:54,France,Facilities,Mobile Device,Phishing,  Medium  ,p3-medium,,Resolved,246,170,1158,Minor,137,2974,Weak Password,Internal,  No  ,M. Dupont
+INC-20240021,2025-04-10 02:30:16,Belgium,Legal,Email Account,Phishing,Low,  P4 - Low  ,User Report,In Progress,81,45,170,Minor,20,563,,Confidential,No,A. Weber
+INC-20240022,2024-08-02 04:53:21,France,Finance,Server,Unauthorized  Access,High,P2 High,  Audit  ,Resolved,673,909,3152,Major,-1797,14 257,Social Engineering,Internal,Yes,C. Schmidt
+INC-20240023,2025-08-31 09:08:34,Luxembourg,Finance,Database,Phishing,Medium,p3-medium,Threat Intel,Eradicated,188,108,588,Minor,59,2454,Weak Password,Internal,Yes,E. Bernard
+INC-20240024,2024-04-27 04:04:23,  Luxembourg  ,HR,Workstation,  Phishing  ,Low,P4 - Low,Threat Intel,Eradicated,165,79,-268,Moderate,102,223,Third-Party Supplier,Public,Yes,E. Bernard
+INC-20240025,2024-05-28 13:01:38,  Belgium  ,Operations,Server,Malware,Critical,P1 - Critical,,  Resolved  ,601,1278 min,5374,Major,2356,83364,Lost/Stolen,Internal,No,S. Rossi
+INC-20240026,16/10/2024 15:00,Luxembourg,HR,Mobile Device,Lost/Stolen Device,Low,  P4 - Low  ,Threat Intel,  Resolved  ,353,59,316,Minor,24,€ 443,Lost/Stolen,Confidential,No,L. Müller
+INC-20240027,2024-05-27 17:08:14,Belgium,  Operations  ,Application,Phishing,Medium,P3 - Medium,IDS/IPS,Eradicated,-272,188,833 min,None,0,2258 EUR,Lost/Stolen,Confidential,Yes,L. Müller
+INC-20240028,01-28-2025 12:47,Germany,Procurement,  Mobile Device  ,Malware,Medium,P3 - Medium,SIEM,Contained,133,-193,2143,None,0,4167,  Social Engineering  ,Internal,  No  ,E. Bernard
+INC-20240029,2025-03-05 15:53:19,Luxembourg,  R&D  ,Cloud Service,Phshing,Medium,P3 - Medium,IDS/IPS,Contained,145,122,-687,Minor,76,687,Misconfiguration,Public,No,L. Müller
+INC-20240030,2025-03-22 22:41:18,France,Finance,  Email Account  ,Malware,Low,low (P4),Email Gateway,Eradicated,127,35,325,Moderate,105 min,269,,Internal,No,S. Rossi
+INC-20240031,2024-10-13 22:24:36,France,R&D,Workstation,Phishing,Medium,P3 - Medium,IDS/IPS,Eradicated,149,351,405 min,  Minor  ,50,€ 2900,  Misconfiguration  ,Confidential,No,C. Schmidt
+INC-20240032,2025-08-15 06:10:41,Luxembourg,Sales,Mobile Device,Malware,Medium,P3 - Medium,  SIEM  ,  Resolved  ,-210 min,270,344,Minor,40,3104,Lost/Stolen,Internal,No,L. Müller
+INC-20240033,01/07/2024 16:34,  Germany  ,Operations,  Database  ,Phising,Low,low (P4),EDR,Eradicated,102,106,454,Major,246,282,Unpatched Vulnerability,Confidential,Yes,M. Dupont
+INC-20240034,2025-09-30 16:54:49,Luxembourg,Procurement,Cloud Service,DDoS,Medium,P3 - Medium,Threat Intel,Contained,511,364,1342 min,Moderate,496,4496,Unpatched Vulnerability,Confidential,No,C. Schmidt
+INC-20240035,2025-09-16 15:32:13,Germany,HR,Application,  Lost/Stolen Device  ,High,P2 High,EDR,Eradicated,522,-578,2455,Moderate,517,6 912,Unpatched Vulnerability,,No,J. Becker
+INC-20240036,2025-02-04 08:32:15,France,Legal,Mobile Device,  Unauthorized Access  ,  Medium  ,P3 - Medium,  Email Gateway  ,Contained,201,512,1071,None,0,2428,Unpatched Vulnerability,  Internal  ,No,L. Müller
+INC-20240037,2025-06-17 02:16:01,Belgium,R&D,Database,Phishing,Low,P4 - Low,Threat Intel,Resolved,73,80,-432,Minor,47,558,Insider Error,,No,N. Laurent
+INC-20240038,2025-05-22 15:15:21,  Belgium  ,  Facilities  ,Cloud Service,Malware,Critical,P1 - Critical,IDS/IPS,In Progress,518,1086,8987,Minor,679 min,€ 86888,Weak Password,Internal,No,N. Laurent
+INC-20240039,2024-05-15 14:20:45,Luxembourg,Finance,Database,  Data Exfiltration  ,Critical,P1 - Critical,User Report,Resolved,1815,1723,9899,Major,7336,353820 EUR,Unpatched Vulnerability,Public,,L. Müller
+INC-20240040,2025-01-27 15:20:55,France,  Finance  ,Application,Mal-ware,Medium,p3-medium,SIEM,Resolved,-357,235,2238,Moderate,702,3 051,Weak Password,  Restricted  ,,M. Dupont
+INC-20240041,2024-12-27 07:15:30,Luxembourg,HR,Cloud Service,Ddos,  High  ,P2 - High,User Report,In Progress,961,365,1181,Moderate,447,26161,Weak Password,Internal,Yes,  E. Bernard  
+INC-20240042,2024-08-13 05:57:45,France,Finance,Workstation,DDoS,  Medium  ,  P3 - Medium  ,IDS/IPS,Resolved,454,251,1723,Moderate,366,5081,Misconfiguration,Internal,,M. Dupont
+INC-20240043,20 Feb 2025 21:51,Luxembourg,IT,Mobile Device,Unauthorized Access,Critical,P1 - Critical,Email Gateway,In Progress,1218,971,2425,Minor,293,100788,Social Engineering,Public,  No  ,A. Weber
+INC-20240044,2025-04-23 23:08:27,Germany,HR,Database,Misconfig,  High  ,high (P2),User Report,Resolved,167,256,436,None,0,10595,Insider Error,Internal,No,  J. Becker  
+INC-20240045,2025-03-14 08:56:17,Luxembourg,  Sales  ,Application,Malware,High,P2 - High,,Resolved,337,388,1491 min,Minor,182 min,19368,Third-Party Supplier,Confidential,No,A. Weber
+INC-20240046,2025-04-16 09:24:22,France,Sales,Email Account,Ransomware,High,P2 - High,Email Gateway,Contained,759,1546,6774,Minor,620,23091,Unpatched Vulnerability,  Public  ,No,J. Becker
+INC-20240047,2025-09-02 16:19:03,  Luxembourg  ,Finance,Email Account,Unauthorized Access,Medium,medium (P3),User Report,In Progress,412,325,1372,Minor,161,4 682,Unpatched Vulnerability,Internal,No,J. Becker
+INC-20240048,2025-03-22 12:48:32,Germany,Sales,Email Account,Unauthorized Access,Medium,P3 - Medium,IDS/IPS,Eradicated,2824,730,2682 min,Major,1985,3 608,  Insider Error  ,Internal,Yes,S. Rossi
+INC-20240049,2025-10-07 21:43:42,France,Finance,  Cloud Service  ,Phishing,  Medium  ,  P3 - Medium  ,IDS/IPS,Eradicated,158,143,484,Minor,47,2038,  Unpatched Vulnerability  ,Internal,No,  S. Rossi  
+INC-20240050,08-25-2024 23:13,Germany,Finance,Workstation,Phishing,Critical,critical (P1),Email Gateway,Eradicated,669,913,984,Minor,70,20023,  Misconfiguration  ,Internal,Yes,A. Weber
+INC-20240051,2024-06-23 14:35:21,Germany,Finance,Workstation,Phishing,High,P2 - High,User Report,Contained,286,446,1077,None,0,5962,Third-Party Supplier,Restricted,Yes,L. Müller
+INC-20240052,2024-12-05 19:01:34,Germany,Facilities,Application,Phishing,Medium,P3 - Medium,IDS/IPS,Resolved,182,146,959,Moderate,210,2042,  Misconfiguration  ,,No,M. Dupont
+INC-20240053,2024-07-10 05:43:05,  Belgium  ,  HR  ,Server,Lost/Stolen Device,Low,P4 - Low,User Report,Contained,311,90,78,Minor,9,289,,Confidential,  No  ,A. Weber
+INC-20240054,2025-07-26 02:35:29,Belgium,Sales,Cloud Service,  Phishing  ,  Medium  ,P3 - Medium,EDR,Contained,302,141,786,Moderate,168,3156,Unpatched Vulnerability,Confidential,No,S. Rossi
+INC-20240055,2025-02-07 15:59:20,Luxembourg,Facilities,Email Account,Phishing,Low,P4 - Low,Audit,In Progress,132,83,105,Minor,-8,220,Social Engineering,Internal,No,M. Dupont
+INC-20240056,2024-12-30 00:56:30,Luxembourg,Operations,Workstation,Unauthorized Access,Critical,P1 - Critical,Threat Intel,Resolved,-1146,3167,6683,Moderate,2197,110048,Social Engineering,  Internal  ,No,S. Rossi
+INC-20240057,20/10/2024 21:18,Germany,Facilities,Server,Mal-ware,High,P2 - High,EDR,Eradicated,2019,1085,1041,Major,570,20453,Social Engineering,Internal,Yes,S. Rossi
+INC-20240058,2025-06-02 20:01:42,Luxembourg,Facilities,Server,Malware,High,P2 - High,,Eradicated,395,449,2291,Minor,225,6828,  Weak Password  ,Restricted,No,A. Weber
+INC-20240059,2024-10-27 18:52:32,France,Facilities,Application,Unauthorized Access,High,high (P2),Threat Intel,Contained,183,301 min,1732,Minor,162,22524,Social Engineering,Internal,No,J. Becker
+INC-20240060,2024-12-19 05:45:58,France,Procurement,  Workstation  ,  Misconfiguration  ,Medium,  P3 - Medium  ,Email Gateway,In Progress,93,92,498,None,0,1961,Unpatched Vulnerability,,No,J. Becker
+INC-20240061,2025-02-10 18:31:38,France,R&D,Application,Lost/Stolen Device,Medium,P3 - Medium,  EDR  ,Eradicated,420,199,439,Minor,32,2864,,,Yes,S. Rossi
+INC-20240062,2025-06-16 12:22:28,France,IT,Email Account,Misconfiguration,Low,low (P4),Audit,Eradicated,-150,64,198,Moderate,75,354,Third-Party Supplier,Internal,No,  S. Rossi  
+INC-20240063,09 May 2025 16:34,France,Operations,Cloud Service,  Malware  ,  Medium  ,P3 - Medium,,Eradicated,452,96,2589,Minor,327,2 522,,Confidential,,J. Becker
+INC-20240064,2024-09-20 18:02:03,Luxembourg,HR,  Mobile Device  ,Data Exfiltration,Critical,P1 - Critical,Threat Intel,Contained,659,1657,3964,Minor,294,126547,Lost/Stolen,,No,J. Becker
+INC-20240065,2024-09-23 02:43:27,Germany,Sales,Mobile Device,  Phishing  ,Low,P4 - Low,Email Gateway,Resolved,110,107,347,Moderate,112,577,Insider Error,Public,No,N. Laurent
+INC-20240066,2025-08-30 19:41:52,Luxembourg,Finance,Cloud Service,Lost/Stolen Device,  Medium  ,P3 - Medium,Audit,Resolved,260,386,1502,Moderate,391,1421,,Restricted,No,N. Laurent
+INC-20240067,29 Jul 2024 16:09,Belgium,Sales,Workstation,Lost/Stolen Device,High,P2 - High,SIEM,Eradicated,925,-698,2033,Moderate,563,17347,Weak Password,,  No  ,S. Rossi
+INC-20240068,2024-10-19 06:11:20,  Belgium  ,Finance,Database,Phishing,Low,P4 - Low,Email Gateway,Resolved,147,92,248,  Moderate  ,90,323,Misconfiguration,Restricted,Yes,J. Becker
+INC-20240069,2025-08-07 10:28:20,Belgium,Finance,Application,Unauthorised Access,High,P2 - High,IDS/IPS,Resolved,1215,984,5736,Moderate,1535,33826,Social Engineering,,No,E. Bernard
+INC-20240070,2025-08-25 03:52:59,Belgium,R&D,Mobile Device,Malware,Medium,P3 - Medium,  Email Gateway  ,Eradicated,435,381,1198,Major,913,3450,,Internal,No,N. Laurent
+INC-20240071,07 Jun 2024 22:04,Germany,Sales,Cloud Service,Phishing,Medium,P3 - Medium,Email Gateway,Resolved,202,599 min,460,Moderate,152,2605,Unpatched Vulnerability,Confidential,No,S. Rossi
+INC-20240072,28/02/2025 16:02,Luxembourg,  Legal  ,  Network Device  ,Unauthorized  Access,Critical,P1 - Critical,,Resolved,806,1790,7641,  Moderate  ,1730,158166,,Confidential,Yes,S. Rossi
+INC-20240073,2025-09-13 09:55:20,Belgium,Sales,Application,DDoS,High,P2 - High,Threat Intel,Eradicated,-593 min,307,3101,Minor,282,7850,Lost/Stolen,Internal,Yes,M. Dupont
+INC-20240074,2025-05-29 20:17:28,France,Finance,Database,Phishing,High,P2 - High,SIEM,Eradicated,529,517,1201,Moderate,385,4667,Weak Password,Internal,No,E. Bernard
+INC-20240075,2024-08-06 08:30:47,Germany,IT,Mobile Device,Unauthorized Access,Critical,P1 - Critical,Email Gateway,Eradicated,2001,1408,5470,Major,2464,295672,Weak Password,Confidential,No,E. Bernard
+INC-20240076,26/05/2024 11:04,Germany,Finance,Server,Unauthorized Access,Medium,P3 - Medium,User Report,  Resolved  ,294,97,346,None,0,6129,,,No,N. Laurent
+INC-20240077,28 Jul 2024 17:48,Germany,Sales,  Workstation  ,Unauthorized Access,High,P2 - High,Audit,  Eradicated  ,655,588,3158 min,Moderate,904,32278,,Internal,Yes,C. Schmidt
+INC-20240078,2025-04-20 02:12:16,Germany,Sales,Cloud Service,Phishing,Medium,P3 - Medium,SIEM,Resolved,389,160,355,Minor,25,1844,,  Internal  ,No,A. Weber
+INC-20240079,2024-11-14 02:29:52,Belgium,Operations,Cloud Service,Phising,Low,p4-low,IDS/IPS,Resolved,221,64,530,Major,406,301,Lost/Stolen,Restricted,Yes,S. Rossi
+INC-20240080,2024-08-08 00:56:19,Belgium,IT,Mobile Device,Lost/Stolen Device,Medium,P3 - Medium,  Threat Intel  ,Resolved,633,363,809,Moderate,202,3960,Third-Party Supplier,Internal,Yes,A. Weber
+INC-20240081,2024-06-22 17:20:22,Germany,  Legal  ,  Server  ,Phishing,Low,P4 - Low,EDR,False Positive,94,43,183,None,0,372,Third-Party Supplier,Public,No,E. Bernard
+INC-20240082,2025-08-21 14:37:20,Germany,Finance,Application,Malware,Critical,P1 - Critical,Audit,Resolved,422,1189,4096,None,0,121899,Weak Password,Confidential,,S. Rossi
+INC-20240083,2025-03-16 13:52:05,France,Facilities,Database,Phishing,Low,P4 - Low,  SIEM  ,Resolved,199 min,76,1044,  Moderate  ,271,190,Weak Password,Confidential,No,L. Müller
+INC-20240084,2025-07-26 14:31:02,Germany,  Finance  ,Mobile Device,  Malware  ,High,P2 - High,EDR,Eradicated,347,124,1050,Minor,110,6361,  Social Engineering  ,Internal,Yes,  J. Becker  
+INC-20240085,2024-07-25 13:34:03,Belgium,Procurement,  Workstation  ,Phishing,Medium,P3 - Medium,Email Gateway,Resolved,-198,331,916,None,0,1056,Third-Party Supplier,Internal,,C. Schmidt
+INC-20240086,2024-06-09 10:28:20,France,Legal,Server,Misconfiguration,High,  P2 - High  ,Email Gateway,False Positive,304,148,3456,Minor,435,13043,Unpatched Vulnerability,Confidential,Yes,M. Dupont
+INC-20240087,2025-01-28 20:54:08,Belgium,R&D,Workstation,Mal-ware,Medium,P3 - Medium,Email Gateway,Resolved,307,-113,206,None,0,4 193,Lost/Stolen,Confidential,Yes,E. Bernard
+INC-20240088,2024-04-24 06:36:17,Belgium,R&D,Server,Data Exfiltration,High,P2 High,User Report,Resolved,1649,679,6052,Minor,574,17710,Weak Password,Public,No,N. Laurent
+INC-20240089,2025-03-16 20:39:55,Luxembourg,IT,Network Device,  Malware  ,Medium,  P3 - Medium  ,User Report,Resolved,240,184,-549,Minor,53,1463,Weak Password,Confidential,  No  ,N. Laurent
+INC-20240090,2025-09-24 04:08:38,France,R&D,Server,Ransomware,High,P2 - High,IDS/IPS,Resolved,1539,955,4901,Minor,410,38379,  Third-Party Supplier  ,Internal,  No  ,A. Weber
+INC-20240091,2024-11-13 10:58:27,  Belgium  ,HR,Email Account,Phishing,Critical,P1 - Critical,IDS/IPS,Eradicated,280,981,2531,None,0 min,96321,  Weak Password  ,Internal,No,S. Rossi
+INC-20240092,2025-04-15 02:37:27,Germany,IT,  Database  ,  Malware  ,High,p2-high,SIEM,In Progress,355,649,1499,Minor,154,15809,Weak Password,Confidential,No,  N. Laurent  
+INC-20240093,09/05/2024 11:49,Belgium,Facilities,Mobile Device,Data-Exfiltration,High,  P2 - High  ,SIEM,In Progress,695,936,3393,None,0,14814,Weak Password,Internal,No,M. Dupont
+INC-20240094,2025-03-25 06:07:17,Luxembourg,Procurement,Server,Malware,Medium,P3 - Medium,Email Gateway,False Positive,414,305,250,Minor,23,2645 EUR,Lost/Stolen,Internal,No,S. Rossi
+INC-20240095,2024-09-21 23:51:58,Luxembourg,HR,  Application  ,Phishing,Low,P4 - Low,EDR,Resolved,96,77,532,Minor,49,430,  Lost/Stolen  ,Internal,No,  C. Schmidt  
+INC-20240096,26/06/2024 17:04,Germany,Sales,Email Account,Misconfig,Medium,P3 - Medium,Email Gateway,Contained,197,61,557,  Minor  ,54,2770,  Third-Party Supplier  ,Public,No,A. Weber
+INC-20240097,2024-07-19 22:23:30,  Germany  ,Facilities,Workstation,Phishing,Medium,P3 - Medium,EDR,Resolved,75,123,237,None,0,969,,Confidential,  No  ,J. Becker
+INC-20240098,2025-04-04 03:04:13,Belgium,IT,Cloud Service,Ransomware,Critical,P1 - Critical,  Audit  ,In Progress,-2352,2162,-4096,Minor,331,167715,Misconfiguration,  Internal  ,  No  ,C. Schmidt
+INC-20240099,03-30-2025 21:46,  Luxembourg  ,Legal,Server,Malware,Medium,P3 - Medium,IDS/IPS,Contained,234,290,398,Minor,32,1120,,Internal,No,  S. Rossi  
+INC-20240100,2025-04-11 11:17:42,Germany,HR,Server,Malware,Medium,P3 - Medium,IDS/IPS,Resolved,234,110,357,None,0,1300,Insider Error,Confidential,No,M. Dupont
+INC-20240101,2025-04-24 11:14:43,Belgium,Operations,Mobile Device,Unauthorized Access,Medium,P3 - Medium,Threat Intel,In Progress,321,150,723,Minor,-72,4849 EUR,Unpatched Vulnerability,  Restricted  ,Yes,E. Bernard
+INC-20240102,09/10/2025 01:22,France,HR,Database,Misconfiguration,Low,P4 - Low,User Report,Contained,77,43,283,Moderate,103,526,Lost/Stolen,  Confidential  ,,S. Rossi
+INC-20240103,2024-12-17 16:10:22,France,Facilities,Cloud Service,Data Exfiltration,Low,P4 Low,Email Gateway,Eradicated,229,107,693,Minor,56 min,495,Lost/Stolen,  Confidential  ,No,L. Müller
+INC-20240104,08-03-2025 10:15,Germany,Procurement,Database,Malware,Critical,P1 - Critical,User Report,  Resolved  ,1754,1129,1302,Major,836,88368,  Lost/Stolen  ,Confidential,No,A. Weber
+INC-20240105,2024-08-01 18:47:01,Luxembourg,  Sales  ,Server,Unauthorized Access,Critical,P1 - Critical,,Contained,1946,889,-5698,Minor,573,150855,Misconfiguration,Restricted,Yes,N. Laurent
+INC-20240106,2025-04-10 00:58:15,Germany,IT,Database,Phishing,High,P2 - High,,Eradicated,636,395,949,Moderate,290,6486,Misconfiguration,Restricted,No,A. Weber
+INC-20240107,2025-03-27 05:19:02,Belgium,IT,Email Account,Malware,  Low  ,  P4 - Low  ,Threat Intel,  In Progress  ,115,-38,211,Moderate,48,872,Lost/Stolen,Public,No,  J. Becker  
+INC-20240108,2024-11-24 05:26:37,Germany,Finance,Email Account,Unauthorized Access,Critical,P1 - Critical,User Report,Eradicated,523,1874,5474,None,0,135675,  Weak Password  ,Internal,No,  J. Becker  
+INC-20240109,2024-05-04 23:00:31,Belgium,HR,Email Account,Phishing,Medium,P3 - Medium,EDR,Contained,222,105,1616,  Minor  ,-154,981,,Internal,No,M. Dupont
+INC-20240110,2025-09-19 18:28:55,Luxembourg,R&D,Application,Ransomware,High,P2 - High,SIEM,  Resolved  ,2679,1045,2826,Major,1844,38885,Social Engineering,Internal,Yes,M. Dupont
+INC-20240111,24 Mar 2025 04:51,Luxembourg,Legal,Mobile Device,Malware,High,P2 - High,Threat Intel,Resolved,356,620 min,1266,Moderate,308,10590,Lost/Stolen,Confidential,  No  ,J. Becker
+INC-20240112,2025-07-30 01:20:47,France,Operations,Workstation,Unauthorised Access,Critical,P1 - Critical,Threat Intel,Contained,663,826,1959,None,0,236 334,Weak Password,Internal,No,N. Laurent
+INC-20240113,2024-10-30 10:25:01,France,IT,Mobile Device,  Lost/Stolen Device  ,  Medium  ,P3 - Medium,IDS/IPS,Contained,239,125,560,Minor,-44,2952,Social Engineering,  Internal  ,No,J. Becker
+INC-20240114,2025-09-08 18:06:51,France,Procurement,Email Account,Misconfiguration,Medium,P3 - Medium,Threat Intel,Contained,-467,272,1627,Major,1018,1308,Misconfiguration,Public,No,S. Rossi
+INC-20240115,2025-02-14 11:09:33,  Germany  ,R&D,Network Device,Unauthorized Access,Medium,medium (P3),,In Progress,206,268,510,None,0,2521 EUR,  Misconfiguration  ,Public,No,  C. Schmidt  
+INC-20240116,15/06/2024 02:43,Germany,Legal,Network Device,Unauthorized Access,Medium,P3 - Medium,SIEM,Contained,212,-373,761,Moderate,199,4340,,Confidential,,  S. Rossi  
+INC-20240117,2025-05-15 20:39:09,Luxembourg,HR,Application,Phishing,Medium,P3 - Medium,IDS/IPS,Eradicated,210,-88,438,Minor,39,987,Lost/Stolen,Public,Yes,C. Schmidt
+INC-20240118,2024-08-12 00:56:36,Belgium,Facilities,Database,Malware,Medium,P3 - Medium,,Contained,244,-297,-509,Minor,43 min,3592,Lost/Stolen,Internal,No,E. Bernard
+INC-20240119,03 Sep 2024 02:41,Germany,HR,Application,Data Exfiltration,Critical,P1 - Critical,  SIEM  ,Resolved,1779,2960,1307,Minor,118,285001,Lost/Stolen,  Restricted  ,  No  ,M. Dupont
+INC-20240120,2024-09-26 23:13:04,Belgium,Legal,Cloud Service,Unauthorized Access,Medium,P3 - Medium,SIEM,Resolved,244,303,701 min,Minor,88,2227,Lost/Stolen,Public,  No  ,A. Weber
+INC-20240121,28 Aug 2024 22:16,  Luxembourg  ,Finance,  Email Account  ,Maleware,Medium,P3 - Medium,EDR,Resolved,248,166,1450,Minor,113 min,4059,Insider Error,Internal,No,N. Laurent
+INC-20240122,2024-07-02 16:22:59,Germany,Procurement,Mobile Device,Misconfiguration,Low,P4 - Low,User Report,Resolved,191,67,266,Major,127,475 EUR,Lost/Stolen,  Internal  ,No,S. Rossi
+INC-20240123,2024-08-23 18:51:48,Belgium,  Sales  ,Network Device,Malware,  Critical  ,P1 Critical,User Report,  Eradicated  ,646,1625,3885,None,0,€ 151389,Insider Error,Internal,No,E. Bernard
+INC-20240124,2025-01-24 04:33:26,France,Procurement,  Server  ,Misconfiguration,Low,P4 - Low,Email Gateway,Resolved,109,22,136,Moderate,39,218,Third-Party Supplier,Restricted,Yes,C. Schmidt
+INC-20240125,17/05/2024 02:57,Luxembourg,  Sales  ,Cloud Service,Misconfiguration,Medium,P3 - Medium,Threat Intel,Resolved,251,432,911,Moderate,254,1822,Third-Party Supplier,Confidential,  No  ,E. Bernard
+INC-20240126,2025-06-07 10:49:45,Germany,Finance,Workstation,Unauthorized Access,Medium,P3 - Medium,  User Report  ,In Progress,307,283,1600,Minor,123,6166,Misconfiguration,Internal,No,S. Rossi
+INC-20240127,2025-04-06 14:31:00,Belgium,Legal,Server,Malware,High,P2 - High,IDS/IPS,Eradicated,345,829,2293,Moderate,737,16151 EUR,Weak Password,Internal,Yes,  M. Dupont  
+INC-20240128,2025-06-20 09:02:21,Belgium,Legal,Mobile Device,Phishing,  High  ,P2 - High,User Report,Resolved,475,461,1955,  Moderate  ,463,7522,Misconfiguration,Restricted,No,E. Bernard
+INC-20240129,2025-07-30 08:45:52,Belgium,Legal,  Workstation  ,Ransomware,Medium,P3 - Medium,SIEM,Eradicated,836,293,1878,  Minor  ,-217,9209,  Third-Party Supplier  ,Confidential,No,J. Becker
+INC-20240130,2024-09-02 09:37:44,France,R&D,Mobile Device,Malware,Low,P4 Low,SIEM,In Progress,79,80,141,None,0,831,Third-Party Supplier,,No,E. Bernard
+INC-20240131,2025-01-29 22:41:29,Luxembourg,HR,Server,Phishing,Medium,P3 - Medium,EDR,Eradicated,252,129,645,Moderate,162,2529,  Social Engineering  ,Internal,No,  S. Rossi  
+INC-20240132,2024-06-03 01:25:00,Belgium,  Legal  ,Application,Phishing,Medium,P3 Medium,Email Gateway,In Progress,251,250,1461,Minor,163,2062,Third-Party Supplier,Confidential,Yes,  C. Schmidt  
+INC-20240133,2025-02-18 21:37:00,France,Procurement,Application,Phishing,Critical,P1 - Critical,Audit,Resolved,618,452,1159,Moderate,339,118399,Misconfiguration,Confidential,No,  M. Dupont  
+INC-20240134,2024-05-15 21:43:58,Germany,Sales,  Cloud Service  ,  Lost/Stolen Device  ,Medium,P3 - Medium,Audit,  Contained  ,624,296,524,  Moderate  ,157,2799,Misconfiguration,Internal,No,N. Laurent
+INC-20240135,2024-08-08 06:56:46,Luxembourg,Facilities,Mobile Device,Phishing,Medium,P3 - Medium,EDR,Contained,180,186,691,None,0,1030,Insider Error,Internal,No,J. Becker
+INC-20240136,2024-09-06 18:53:04,Belgium,  Procurement  ,Mobile Device,Misconfig,Medium,P3 - Medium,Audit,In Progress,167,295,1032,None,0,2209,Misconfiguration,Internal,Yes,C. Schmidt
+INC-20240137,2025-01-13 22:12:43,Germany,Operations,Cloud Service,  Unauthorized Access  ,High,P2 - High,,  Resolved  ,588,615,2709,Moderate,857,18038,Unpatched Vulnerability,Restricted,No,E. Bernard
+INC-20240138,2025-08-22 12:41:58,France,Sales,Server,Data Exfiltration,High,P2 - High,,Resolved,1487,665,2229,Minor,263,8362,Misconfiguration,  Confidential  ,No,  C. Schmidt  
+INC-20240139,2025-02-06 02:52:38,France,Facilities,Email Account,Stolen Device,High,p2-high,Audit,In Progress,352,173,-2595,Minor,235,9775,Unpatched Vulnerability,  Confidential  ,No,E. Bernard
+INC-20240140,2024-12-22 01:50:53,Belgium,  Operations  ,Workstation,  Phishing  ,Medium,P3 - Medium,SIEM,In Progress,222,136,1763,Minor,147,1824,Insider Error,Internal,,S. Rossi
+INC-20240141,2025-06-08 23:46:15,Germany,Facilities,Cloud Service,Phishing,Medium,P3 - Medium,Threat Intel,Resolved,352,254 min,231 min,Major,173,1 594,Social Engineering,  Internal  ,Yes,M. Dupont
+INC-20240142,2024-05-26 06:22:26,Germany,HR,Workstation,Unauthorized Access,Medium,P3 - Medium,Threat Intel,Eradicated,427,825 min,-2576,Moderate,547,4933,,  Internal  ,No,E. Bernard
+INC-20240143,2024-08-05 12:11:54,France,Facilities,Application,  Misconfiguration  ,Low,P4 - Low,User Report,Resolved,86,27,899,Minor,66,440,Misconfiguration,Internal,No,  C. Schmidt  
+INC-20240144,2024-10-25 00:30:46,France,Sales,  Cloud Service  ,Phishing,Medium,P3 - Medium,User Report,Resolved,221,178,594,Minor,48,1133,Insider Error,Confidential,No,C. Schmidt
+INC-20240145,2024-09-08 17:23:00,France,Operations,Workstation,Phishing,  Medium  ,P3 - Medium,IDS/IPS,Eradicated,213,123 min,422,  Minor  ,49,€ 1809,Misconfiguration,  Confidential  ,No,E. Bernard
+INC-20240146,21/04/2025 08:36,Luxembourg,Finance,Application,Unauthorized Access,High,p2-high,IDS/IPS,Contained,701,-133,3880,Minor,364,21481 EUR,,Internal,No,E. Bernard
+INC-20240147,29 Apr 2025 22:22,  Belgium  ,Operations,Network Device,  Data Exfiltration  ,High,P2 - High,EDR,Contained,1506,1076,2227,Major,1451,24 138,Insider Error,Restricted,  No  ,J. Becker
+INC-20240148,2024-12-27 21:41:34,Luxembourg,Procurement,  Application  ,DDoS,High,P2 - High,Email Gateway,Resolved,548,896,4817,Moderate,1035,10833 EUR,Weak Password,Restricted,Yes,L. Müller
+INC-20240149,02/10/2025 16:05,Luxembourg,Operations,Application,Unauthorized Access,  Medium  ,P3 - Medium,SIEM,Resolved,448,143,735,  Minor  ,-80 min,2519,Misconfiguration,,No,N. Laurent
+INC-20240150,2025-02-27 00:47:33,Germany,Sales,Workstation,Malware,Low,P4 - Low,Audit,Eradicated,145,53,191,Minor,21,840,Weak Password,Public,No,M. Dupont
+INC-20240151,2025-08-14 01:09:19,France,R&D,Network Device,Unauthorized Access,Low,P4 - Low,Threat Intel,Contained,189,194,228,Moderate,59,€ 1170,  Insider Error  ,Restricted,No,N. Laurent
+INC-20240152,2025-05-09 13:40:36,Luxembourg,Procurement,Network Device,Maleware,High,high (P2),Audit,Resolved,614,423,679,Minor,64,22 079,Weak Password,Internal,  No  ,S. Rossi
+INC-20240153,2024-05-11 10:51:47,Germany,Procurement,Database,Data Exfiltraton,  Medium  ,P3 Medium,Email Gateway,Eradicated,311,486,754,None,0,3315,Unpatched Vulnerability,Internal,No,E. Bernard
+INC-20240154,20/05/2024 15:15,Luxembourg,Operations,Cloud Service,Phishing,High,P2 - High,SIEM,Contained,319,222,4828,Moderate,1493,10093,Weak Password,Internal,No,A. Weber
+INC-20240155,2024-11-26 02:03:18,Belgium,Procurement,Email Account,Phising,Low,P4 Low,User Report,Resolved,117,51,155,Minor,18,353,Insider Error,Internal,No,C. Schmidt
+INC-20240156,2025-10-03 08:02:52,Germany,Sales,Email Account,Phishing,High,P2 - High,SIEM,Resolved,912,617,2552,Major,1462,3997,  Third-Party Supplier  ,Confidential,No,N. Laurent
+INC-20240157,2025-05-13 19:05:42,France,R&D,  Database  ,Unauthorized Access,Low,P4 - Low,User Report,  Eradicated  ,190,35,149,Minor,11,1096,Unpatched Vulnerability,Confidential,,L. Müller
+INC-20240158,2024-06-16 20:28:33,Germany,R&D,Network Device,  Malware  ,High,P2 - High,EDR,Eradicated,840,472,2306,Moderate,555,10584,Unpatched Vulnerability,Internal,Yes,J. Becker
+INC-20240159,2024-10-30 01:52:35,France,R&D,Workstation,Misconfiguration,Low,P4 - Low,Threat Intel,  Contained  ,134,38,-318,Moderate,104,481,  Lost/Stolen  ,Confidential,No,L. Müller
+INC-20240160,2024-05-03 07:42:42,  Belgium  ,Finance,Application,Malware,  High  ,P2 High,User Report,Resolved,242,409,2596,Minor,275,18051,Insider Error,Internal,No,C. Schmidt
+INC-20240161,2025-04-20 11:13:45,France,Legal,Application,Ddos,Medium,P3 Medium,EDR,Contained,137,113,593,Minor,47,4 129,Insider Error,Internal,,  L. Müller  
+INC-20240162,30 Nov 2024 05:18,Luxembourg,Sales,Database,Mal-ware,Medium,P3 - Medium,IDS/IPS,  Contained  ,242,197,457,Minor,38,2464,Social Engineering,Internal,,L. Müller
+INC-20240163,2025-01-06 17:47:24,Germany,Facilities,Network Device,Ransomware,Critical,P1 - Critical,Audit,Resolved,1617,1190,5211,Moderate,1625,237982,Unpatched Vulnerability,Public,No,S. Rossi
+INC-20240164,2024-06-17 19:04:34,  Luxembourg  ,Finance,  Workstation  ,Misconfiguration,Medium,medium (P3),Threat Intel,Contained,380,239,836,Moderate,285,1071,Unpatched Vulnerability,Confidential,,S. Rossi
+INC-20240165,2025-08-25 17:45:44,Luxembourg,IT,Database,Phishing,Medium,  P3 - Medium  ,SIEM,Contained,-171,172,3010,Minor,271,2684,Insider Error,Internal,No,A. Weber
+INC-20240166,2024-10-18 03:53:46,Luxembourg,Procurement,Network Device,Ransomware,Critical,P1 - Critical,User Report,  Contained  ,1732,1768,20833,Minor,2318,235666,Third-Party Supplier,Internal,  No  ,N. Laurent
+INC-20240167,2024-12-23 08:13:23,France,Finance,Workstation,Phishing,High,P2 - High,SIEM,In Progress,573,244,1894,Minor,163,10930,  Misconfiguration  ,Internal,,A. Weber
+INC-20240168,2025-03-23 20:36:07,Luxembourg,Procurement,Workstation,Data Exfiltration,Medium,  P3 - Medium  ,  User Report  ,Eradicated,920,325,1613,Moderate,605,2625,Lost/Stolen,Confidential,No,E. Bernard
+INC-20240169,2024-05-21 06:31:48,France,IT,Cloud Service,Phising,Low,P4 - Low,Email Gateway,Contained,188 min,132,432,Major,317,505 EUR,Lost/Stolen,Confidential,No,M. Dupont
+INC-20240170,2025-05-21 19:40:52,France,R&D,Network Device,Malware,Medium,P3 - Medium,Threat Intel,Resolved,140,238,1377,Minor,153,4 285,Insider Error,Public,No,C. Schmidt
+INC-20240171,2025-04-01 22:02:00,Germany,  Legal  ,Workstation,Phishing,Low,P4 - Low,Audit,Eradicated,136,30,363,Moderate,88,401,Misconfiguration,Internal,No,N. Laurent
+INC-20240172,2024-07-14 22:31:23,France,Operations,Server,Malware,High,p2-high,SIEM,  Eradicated  ,678,272,3521,Moderate,1325,26550,Misconfiguration,,No,N. Laurent
+INC-20240173,2025-02-27 16:11:32,France,Sales,Server,Malware,Low,p4-low,User Report,Contained,94,67,195,None,0 min,816 EUR,Misconfiguration,Internal,No,N. Laurent
+INC-20240174,2025-03-16 14:01:33,Luxembourg,Sales,Database,Phishing,Low,P4 - Low,EDR,Resolved,109,56,163,Minor,13,147 EUR,Insider Error,Restricted,No,L. Müller
+INC-20240175,2024-09-07 09:47:27,  France  ,Sales,Application,Unauthorized Access,Medium,P3 - Medium,User Report,Contained,367,198,2141,Minor,-158,2940,Misconfiguration,Internal,No,M. Dupont
+INC-20240176,2025-09-07 21:37:11,Belgium,Facilities,Server,Malware,Critical,P1 Critical,User Report,Eradicated,654,1929,-4212,Moderate,1126,135 335,Misconfiguration,Internal,No,C. Schmidt
+INC-20240177,2024-09-04 10:56:18,France,Operations,Application,Malware,Medium,P3 - Medium,IDS/IPS,  Contained  ,347,365,983,Moderate,372,€ 4177,  Misconfiguration  ,Restricted,No,J. Becker
+INC-20240178,2025-01-30 14:18:22,France,Finance,Cloud Service,Lost/Stolen Device,High,P2 - High,Email Gateway,  Resolved  ,808,305,3689,Minor,364,14551,Unpatched Vulnerability,Confidential,No,J. Becker
+INC-20240179,2024-06-27 14:53:47,Germany,HR,Email Account,Lost/Stolen Device,Low,P4 - Low,User Report,Eradicated,143,177,885,Moderate,223,181,Unpatched Vulnerability,Confidential,No,M. Dupont
+INC-20240180,18 Sep 2025 15:13,  Luxembourg  ,Legal,Server,Malware,Medium,P3 - Medium,SIEM,Resolved,194,91 min,414,Minor,36,1863,Insider Error,Confidential,,A. Weber
+INC-20240181,2025-03-23 15:40:20,Luxembourg,IT,Server,Unauthorised Access,High,P2 - High,IDS/IPS,Eradicated,861,736,6644,Moderate,1656,35806,  Insider Error  ,Internal,No,L. Müller
+INC-20240182,2025-09-12 05:29:18,France,IT,Application,  Malware  ,Medium,P3 - Medium,SIEM,  Eradicated  ,209,382,-823,Moderate,312,2840,Weak Password,Public,No,S. Rossi
+INC-20240183,2025-10-03 17:34:58,France,Facilities,Server,Malware,Medium,P3 - Medium,EDR,Resolved,199,283,1034,Moderate,330,3025,Misconfiguration,  Internal  ,No,M. Dupont
+INC-20240184,03/10/2024 08:52,Belgium,Procurement,Network Device,Phishing,Low,  P4 - Low  ,IDS/IPS,  Resolved  ,105,-31,125,None,0,€ 184,Misconfiguration,Internal,No,S. Rossi
+INC-20240185,2024-11-06 16:22:06,Germany,R&D,Workstation,  Phishing  ,Medium,P3 - Medium,Audit,Eradicated,167,293,1519,Minor,169,€ 1051,Social Engineering,  Confidential  ,No,M. Dupont
+INC-20240186,2025-04-27 11:52:07,  Belgium  ,Facilities,Server,Unauthorized Access,High,P2 - High,  IDS/IPS  ,Resolved,534 min,382,2947,Minor,245,20640,  Misconfiguration  ,Internal,No,N. Laurent
+INC-20240187,2025-07-30 22:28:38,  Belgium  ,Sales,Server,  Unauthorized Access  ,High,P2 - High,,Contained,1247,1237,1395,Minor,172,31395,Weak Password,Internal,Yes,C. Schmidt
+INC-20240188,2024-09-06 20:55:40,  Germany  ,R&D,  Network Device  ,Data Exfiltration,  High  ,P2 - High,EDR,  Resolved  ,822,830,-3520,Minor,384,26611,Insider Error,Restricted,No,S. Rossi
+INC-20240189,2025-03-06 16:25:13,Luxembourg,Legal,  Workstation  ,Unauthorized Access,High,p2-high,EDR,Contained,500,270,704,None,0,19094,Lost/Stolen,,  No  ,J. Becker
+INC-20240190,16 Jul 2025 17:47,Belgium,Finance,Workstation,Malware,Medium,P3 - Medium,Threat Intel,  Resolved  ,232,180,1070,Moderate,388,2972,Social Engineering,Public,Yes,E. Bernard
+INC-20240191,07 Sep 2025 20:00,Luxembourg,Finance,Email Account,Phshing,Medium,P3 Medium,  Threat Intel  ,False Positive,-771,161,628,Moderate,208,€ 2131,Social Engineering,,,  J. Becker  
+INC-20240192,2024-12-27 10:50:21,Luxembourg,Facilities,  Email Account  ,Unauthorized Access,Critical,P1 - Critical,,Resolved,1224,1079,2600,  None  ,0,168957,Weak Password,Internal,No,  L. Müller  
+INC-20240193,2025-06-30 06:02:35,  Belgium  ,Operations,Cloud Service,Phishing,Medium,medium (P3),Threat Intel,Contained,389,271,1597,Moderate,-513,2698,  Social Engineering  ,Internal,No,S. Rossi
+INC-20240194,2025-01-16 18:43:45,Luxembourg,HR,Database,Maleware,High,P2 - High,SIEM,Resolved,766 min,331,1572,Minor,141,€ 19344,,Confidential,  No  ,S. Rossi
+INC-20240195,2025-05-25 17:49:14,Belgium,Sales,  Database  ,Phishing,Medium,P3 - Medium,EDR,In Progress,325,172,857,Moderate,180,1399,,Confidential,No,N. Laurent
+INC-20240196,04-30-2025 16:33,Germany,  Legal  ,Workstation,Ransomeware,High,  P2 - High  ,Threat Intel,Resolved,3601,1782,6663,Major,4313,29187 EUR,Insider Error,Public,No,  C. Schmidt  
+INC-20240197,2025-07-01 07:42:47,  Germany  ,Sales,Mobile Device,  Misconfiguration  ,Medium,P3 - Medium,,Eradicated,248,424,478,Minor,55,1782,Third-Party Supplier,,No,J. Becker
+INC-20240198,2024-06-04 03:37:31,Germany,IT,Server,DDoS,High,P2 - High,Threat Intel,Contained,817,535,-2655,Moderate,859,26698 EUR,Misconfiguration,Public,,L. Müller
+INC-20240199,2025-02-21 05:47:17,France,Finance,Mobile Device,Lost/Stolen Device,Critical,critical (P1),IDS/IPS,Contained,861,1134,7843,  Moderate  ,1742 min,112349,  Insider Error  ,Restricted,Yes,N. Laurent
+INC-20240200,2025-07-01 23:51:55,Luxembourg,Finance,Workstation,  Unauthorized Access  ,  High  ,P2 - High,  User Report  ,In Progress,579,1190,1050,  Moderate  ,-229,29 368,Unpatched Vulnerability,Internal,No,J. Becker
+INC-20240201,2025-06-24 04:48:44,Germany,Finance,Cloud Service,Phshing,Medium,P3 - Medium,EDR,Contained,224,254,2155,Moderate,717,1 909,Lost/Stolen,,No,E. Bernard
+INC-20240202,2024-09-01 23:21:32,Belgium,Finance,Workstation,Phishing,Medium,P3 - Medium,Email Gateway,  Resolved  ,273,102,225,Moderate,53,2688,Misconfiguration,Internal,Yes,S. Rossi
+INC-20240203,2024-11-26 03:09:22,Luxembourg,HR,Server,Misconfiguration,Medium,p3-medium,Email Gateway,Resolved,127,205,666,Minor,72,1180,Social Engineering,Restricted,No,S. Rossi
+INC-20240204,2025-02-03 00:58:35,France,Operations,Cloud Service,Phishing,Medium,P3 Medium,Audit,Eradicated,172,224,610,Minor,58,2287,Insider Error,Public,No,L. Müller
+INC-20240205,29 Jun 2024 19:14,Luxembourg,Legal,Mobile Device,Ransomware,High,P2 - High,User Report,Eradicated,651,636 min,3502 min,Minor,433,20 029,Lost/Stolen,Internal,No,S. Rossi
+INC-20240206,2024-05-05 21:23:06,  Luxembourg  ,IT,Email Account,DDoS,Critical,P1 - Critical,User Report,Contained,1238,600,10683,Moderate,3905,147354,Weak Password,Restricted,No,E. Bernard
+INC-20240207,03/06/2025 03:00,Belgium,Sales,Server,  Unauthorized Access  ,High,P2 - High,IDS/IPS,  Contained  ,770,633,2837,Minor,328,23166,,Restricted,Yes,C. Schmidt
+INC-20240208,2024-06-24 11:17:34,Germany,Operations,Workstation,  Malware  ,Medium,P3 - Medium,User Report,Contained,-373,258,-1432,Moderate,506,2951,Misconfiguration,Public,No,A. Weber
+INC-20240209,2024-08-18 00:27:40,Belgium,IT,Network Device,Malware,High,  P2 - High  ,EDR,  Resolved  ,476,1151,1827,  Moderate  ,404,€ 16619,Third-Party Supplier,Internal,No,E. Bernard
+INC-20240210,2025-01-18 04:17:53,  Luxembourg  ,Legal,Database,Phshing,Low,low (P4),  IDS/IPS  ,False Positive,79,106,189,Moderate,50,336,Social Engineering,Confidential,  No  ,M. Dupont
+INC-20240211,2024-10-05 13:23:13,Belgium,Sales,Server,Ransomeware,High,p2-high,Email Gateway,Resolved,801,214,1113,None,0 min,44404,Weak Password,Internal,No,A. Weber
+INC-20240212,2025-04-25 13:56:37,Belgium,HR,Workstation,Misconfiguration,Low,P4 - Low,Email Gateway,Resolved,104,23,149 min,None,0,553,Insider Error,Confidential,No,  C. Schmidt  
+INC-20240213,2024-07-06 20:48:32,  France  ,  Finance  ,Workstation,Phishing,High,P2 - High,User Report,Eradicated,431,181,-3194,Minor,330,€ 3434,Third-Party Supplier,Restricted,No,M. Dupont
+INC-20240214,2025-03-02 11:54:59,Luxembourg,Procurement,Application,Misconfiguration,High,P2 - High,SIEM,Eradicated,709,415,439,Moderate,-99,6793,Social Engineering,Internal,,L. Müller
+INC-20240215,2024-11-04 19:53:58,Belgium,HR,Workstation,Malware,Medium,P3 - Medium,  EDR  ,Contained,160,156,2117,  Minor  ,249,1771,  Third-Party Supplier  ,Internal,,  A. Weber  
+INC-20240216,26 Feb 2025 03:47,Belgium,Procurement,Cloud Service,Lost Device,Low,P4 - Low,EDR,In Progress,-221,172,597,Moderate,128,765,  Weak Password  ,  Restricted  ,,E. Bernard
+INC-20240217,2025-10-02 15:02:20,France,  Facilities  ,Server,  Phishing  ,High,P2 - High,Email Gateway,Contained,575,304,2561,Moderate,866 min,14627,Unpatched Vulnerability,Confidential,No,A. Weber
+INC-20240218,2025-01-10 11:28:08,Germany,Legal,Mobile Device,Maleware,Critical,P1 - Critical,EDR,Eradicated,842,1216 min,2088 min,Minor,156,166143,Weak Password,Restricted,Yes,M. Dupont
+INC-20240219,08 Jun 2025 04:23,France,Operations,Application,Phishing,Low,P4 - Low,IDS/IPS,In Progress,182,59,750,Minor,76,493,Lost/Stolen,Public,Yes,E. Bernard
+INC-20240220,03-19-2025 05:24,Luxembourg,Operations,Mobile Device,Misconfiguration,Medium,P3 - Medium,EDR,False Positive,116,83,344,None,0,1051,Insider Error,,No,S. Rossi
+INC-20240221,2024-12-29 03:26:55,Germany,Finance,Network Device,Phishing,Low,low (P4),SIEM,  Contained  ,133,40,212,Minor,21,483,Lost/Stolen,Confidential,Yes,L. Müller
+INC-20240222,2024-07-13 21:12:06,France,Finance,  Workstation  ,  Misconfiguration  ,Medium,P3 - Medium,SIEM,Contained,588,190,804,Moderate,197,2124 EUR,Insider Error,  Internal  ,  Yes  ,C. Schmidt
+INC-20240223,2025-07-05 14:22:53,Germany,IT,Database,Phshing,High,P2 - High,Audit,In Progress,311,112,1317,None,0,8646,Social Engineering,Internal,Yes,E. Bernard
+INC-20240224,2024-12-25 23:34:00,France,Facilities,Database,Malware,Low,  P4 - Low  ,Email Gateway,  In Progress  ,202,42,129,Moderate,50,154,Weak Password,Internal,Yes,L. Müller
+INC-20240225,07 May 2024 13:55,France,Facilities,Application,Unauthorized Access,High,high (P2),IDS/IPS,Resolved,735,850,5537,Minor,549,30338,Third-Party Supplier,Internal,No,A. Weber
+INC-20240226,30/01/2025 02:07,  Germany  ,Procurement,Mobile Device,Malware,Medium,P3 Medium,Threat Intel,Resolved,259 min,214,-1590,Moderate,413,3368,,Restricted,Yes,L. Müller
+INC-20240227,2024-06-14 07:59:18,Germany,Legal,Network Device,Phishing,Medium,p3-medium,,Eradicated,701,-581,801,Major,542 min,3127,Social Engineering,Confidential,No,A. Weber
+INC-20240228,2024-09-10 20:30:07,Belgium,Facilities,Email Account,  Data Exfiltration  ,High,P2 High,User Report,In Progress,1124,546,1924,  Minor  ,-246,14130,Weak Password,Public,No,A. Weber
+INC-20240229,11-10-2024 04:45,France,HR,Mobile Device,Ransomware,  Medium  ,P3 - Medium,SIEM,Contained,1069,1455,4489,  Major  ,2605,€ 7712,,Confidential,Yes,M. Dupont
+INC-20240230,2025-05-05 14:24:11,Luxembourg,Legal,Email Account,Misconfiguration,High,p2-high,IDS/IPS,Contained,595,920,730,Major,349,€ 7430,Unpatched Vulnerability,Confidential,No,J. Becker
+INC-20240231,18 Apr 2025 08:07,Belgium,R&D,Email Account,Unauthorized  Access,Medium,P3 - Medium,Audit,Resolved,360 min,810,1370,Major,1053,3982,  Unpatched Vulnerability  ,  Internal  ,  Yes  ,N. Laurent
+INC-20240232,2024-10-21 21:55:56,France,  Operations  ,Server,Misconfiguration,  Medium  ,P3 - Medium,EDR,Contained,220,149,266 min,Minor,23,2 422,Insider Error,Public,No,C. Schmidt
+INC-20240233,2025-03-27 16:15:40,Luxembourg,Sales,Cloud Service,Phishing,High,P2 - High,  User Report  ,Resolved,185 min,209,2551,None,0,€ 5345,,,Yes,A. Weber
+INC-20240234,2024-10-05 15:04:26,Germany,R&D,Mobile Device,Phishing,Low,P4 - Low,Email Gateway,Eradicated,151 min,45,750,Minor,90 min,535,Lost/Stolen,Internal,No,L. Müller
+INC-20240235,2025-02-13 00:43:51,France,Sales,Server,Phishing,Low,P4 - Low,SIEM,Eradicated,212,79,240,Moderate,62,112 EUR,Misconfiguration,Internal,  Yes  ,M. Dupont
+INC-20240236,2024-05-19 15:42:14,  Belgium  ,R&D,  Network Device  ,  Malware  ,Critical,critical (P1),SIEM,Contained,865,1346,3862 min,  Moderate  ,838,46656,Unpatched Vulnerability,Restricted,No,E. Bernard
+INC-20240237,2025-05-25 20:49:03,Germany,HR,Workstation,Unauthorized Access,Medium,P3 - Medium,,Contained,360,193,845,None,0,2039,  Weak Password  ,Internal,No,J. Becker
+INC-20240238,2025-02-10 02:58:59,Germany,Finance,Email Account,Phishing,Low,P4 - Low,Threat Intel,Eradicated,48,85,265,Minor,25,369,Misconfiguration,Confidential,No,N. Laurent
+INC-20240239,2025-07-18 01:37:28,France,Facilities,Application,Phishing,High,  P2 - High  ,IDS/IPS,Eradicated,996,302,2519,Minor,-206,12063,Social Engineering,Internal,  Yes  ,M. Dupont
+INC-20240240,2024-12-06 20:09:21,Luxembourg,R&D,Database,Phishing,Low,P4 - Low,Email Gateway,Resolved,71,39,681,Minor,83,180,Misconfiguration,Internal,Yes,E. Bernard
+INC-20240241,2025-09-14 20:47:50,Belgium,Finance,  Application  ,Phishing,High,P2 High,  User Report  ,  Resolved  ,795 min,-539,1843,Moderate,551,11720,Unpatched Vulnerability,Restricted,No,S. Rossi
+INC-20240242,2024-11-10 22:50:11,Belgium,Sales,Mobile Device,Phishing,Low,P4 - Low,Audit,  Resolved  ,162,77,527,Moderate,113,608,Weak Password,Public,No,C. Schmidt
+INC-20240243,2024-04-30 22:41:05,Germany,Finance,Database,Missconfiguration,Medium,P3 - Medium,User Report,Contained,537,469,1521,  Major  ,854,2191,  Third-Party Supplier  ,  Internal  ,No,M. Dupont
+INC-20240244,04/02/2025 19:30,France,R&D,Email Account,Stolen Device,Medium,P3 - Medium,EDR,Resolved,133,184,402,None,0,954 EUR,  Third-Party Supplier  ,Confidential,Yes,E. Bernard
+INC-20240245,2025-06-03 01:24:43,  Germany  ,Legal,Cloud Service,  Malware  ,Medium,P3 - Medium,SIEM,Resolved,304,275,1135,Moderate,354,3930,,Confidential,Yes,E. Bernard
+INC-20240246,2024-07-27 08:17:58,Belgium,Sales,Application,Maleware,High,P2 - High,Threat Intel,Resolved,738,414,3338 min,Moderate,897,19 198,Social Engineering,Confidential,No,M. Dupont
+INC-20240247,2025-08-27 18:48:18,France,IT,Network Device,Phishing,Low,  P4 - Low  ,SIEM,Eradicated,178,99,234,Moderate,83,148,Third-Party Supplier,Internal,No,A. Weber
+INC-20240248,2024-06-16 09:05:01,Luxembourg,Facilities,Workstation,Phishing,High,P2 - High,IDS/IPS,Resolved,748,297,1308,Minor,117,7983 EUR,Social Engineering,Internal,No,N. Laurent
+INC-20240249,2025-05-04 17:47:46,Germany,HR,Application,  Unauthorized Access  ,Medium,  P3 - Medium  ,Email Gateway,Resolved,508,132,-444,None,0,3191,  Social Engineering  ,Internal,No,M. Dupont
+INC-20240250,2024-11-23 08:03:32,Belgium,Operations,  Email Account  ,Malware,Medium,P3 - Medium,  Audit  ,In Progress,101,409,1319,  Minor  ,141,2778,,Confidential,No,A. Weber
+INC-20240251,2024-04-26 08:08:49,France,Sales,Email Account,Malware,Low,P4 - Low,,Resolved,177,51,53,Minor,3,€ 406,Lost/Stolen,Internal,  No  ,J. Becker
+INC-20240252,2024-07-31 00:16:03,France,Procurement,Email Account,Malware,Medium,P3 - Medium,IDS/IPS,Resolved,780,116,348,Moderate,109,3041,  Misconfiguration  ,Public,No,  C. Schmidt  
+INC-20240253,2025-02-17 06:51:28,Belgium,Procurement,Cloud Service,Misconfiguration,  Low  ,P4 - Low,  SIEM  ,  Resolved  ,217,82,356,  Moderate  ,135,79,Lost/Stolen,Confidential,No,C. Schmidt
+INC-20240254,02-14-2025 09:26,Germany,R&D,Database,Data Exfiltraton,  Critical  ,P1 - Critical,  Audit  ,Contained,2633,2735,8864,Moderate,2249,344 232,Insider Error,,No,C. Schmidt
+INC-20240255,2025-08-18 13:03:08,France,HR,Network Device,Data Exfiltration,Medium,P3 - Medium,IDS/IPS,Contained,355,312,521,Minor,-45,3582,Unpatched Vulnerability,  Confidential  ,No,  S. Rossi  
+INC-20240256,01 Dec 2024 12:56,Belgium,Sales,Database,Lost/Stolen Device,High,P2 High,Threat Intel,Resolved,659,-563,4747,Moderate,1262,15502 EUR,Social Engineering,  Internal  ,No,M. Dupont
+INC-20240257,2024-06-29 17:11:34,  Belgium  ,Procurement,Server,Malware,High,P2 - High,Threat Intel,Resolved,323,576,798,Minor,64,17991,Third-Party Supplier,Internal,Yes,  S. Rossi  
+INC-20240258,2025-07-30 05:12:52,France,  HR  ,Server,Phishing,Low,  P4 - Low  ,EDR,Eradicated,-98,56,97,Minor,10,139,  Unpatched Vulnerability  ,Internal,Yes,J. Becker
+INC-20240259,09-27-2024 17:49,Luxembourg,HR,Database,Phishing,Medium,P3 - Medium,Audit,  In Progress  ,114,201,640,Minor,75,2063,Misconfiguration,Restricted,No,  A. Weber  
+INC-20240260,2025-03-13 19:20:03,Belgium,IT,  Workstation  ,Unauthorized Access,High,  P2 - High  ,Audit,Resolved,1508,965,2804,Major,2138,26462,,Confidential,No,S. Rossi
+INC-20240261,2024-06-23 01:39:52,  France  ,Sales,Application,Phshing,Medium,P3 - Medium,  Audit  ,False Positive,220,165,-425,Minor,45,1699,Third-Party Supplier,Internal,No,S. Rossi
+INC-20240262,27/10/2024 06:00,Germany,  IT  ,Cloud Service,Malware,Critical,P1 Critical,User Report,Resolved,552,386,1900,  Minor  ,221,68347,Unpatched Vulnerability,Internal,Yes,S. Rossi
+INC-20240263,2025-05-07 23:18:48,France,Procurement,Workstation,Phishing,Medium,  P3 - Medium  ,  Email Gateway  ,Resolved,249,393,562,  Moderate  ,181,1829,Insider Error,,No,A. Weber
+INC-20240264,2025-01-01 17:16:20,Belgium,Operations,Workstation,Data Exfiltration,  High  ,P2 - High,IDS/IPS,In Progress,1073,397,3468,Minor,396,37 019,Weak Password,Confidential,No,  S. Rossi  
+INC-20240265,2024-08-16 10:17:34,Luxembourg,Finance,Application,Maleware,High,  P2 - High  ,,Resolved,445,337,1478,Minor,157,15536,Lost/Stolen,Internal,No,L. Müller
+INC-20240266,2025-09-08 07:33:42,  Germany  ,Legal,  Cloud Service  ,Malware,Medium,P3 - Medium,SIEM,Contained,226,136,316,  Minor  ,33,2877,  Weak Password  ,Restricted,No,J. Becker
+INC-20240267,2024-07-30 09:19:00,Belgium,Facilities,  Email Account  ,Phishing,Low,P4 - Low,IDS/IPS,In Progress,78,122,591,Minor,65,639,Weak Password,Confidential,No,E. Bernard
+INC-20240268,2024-08-14 03:27:31,Luxembourg,IT,Network Device,Malware,  High  ,P2 - High,Audit,Resolved,384,478,3825,Minor,330,6533,Social Engineering,Internal,  No  ,E. Bernard
+INC-20240269,2024-10-22 04:08:40,Germany,R&D,  Application  ,Misconfiguration,Low,P4 - Low,IDS/IPS,Resolved,98,37,169,Moderate,-37 min,325,Insider Error,Confidential,No,S. Rossi
+INC-20240270,2024-09-28 03:46:33,Germany,Facilities,Application,Phishing,Medium,P3 - Medium,User Report,Resolved,105,145,-203,None,0,2306,  Lost/Stolen  ,Internal,Yes,S. Rossi
+INC-20240271,2025-07-13 01:40:25,Luxembourg,Sales,Mobile Device,  Ransomware  ,  High  ,P2 High,,  Resolved  ,702 min,1410,9775,Moderate,3801,50337,Insider Error,Internal,No,L. Müller
+INC-20240272,2025-10-05 22:30:33,Luxembourg,R&D,  Cloud Service  ,Lost/Stolen Device,Medium,P3 - Medium,  EDR  ,Eradicated,162,456,1018,Minor,99,1002,Insider Error,Confidential,Yes,A. Weber
+INC-20240273,2025-08-11 18:03:10,Belgium,Finance,  Application  ,  Phishing  ,High,P2 - High,IDS/IPS,Eradicated,-540,336,1790,  Minor  ,146,10205,  Social Engineering  ,Public,Yes,N. Laurent
+INC-20240274,2025-07-20 03:12:16,Germany,Facilities,Mobile Device,Malware,Medium,p3-medium,SIEM,Resolved,166,170,418,Minor,48 min,2 305,Insider Error,Confidential,Yes,N. Laurent
+INC-20240275,2025-02-23 18:30:28,Belgium,Facilities,Mobile Device,Phishing,Medium,p3-medium,  IDS/IPS  ,Resolved,434,285,-437,Moderate,169,3064,Lost/Stolen,Internal,No,J. Becker
+INC-20240276,2024-07-26 23:59:24,Belgium,  IT  ,Mobile Device,Data Exfiltration,High,P2 - High,  IDS/IPS  ,Resolved,845,1320,3135,Minor,317,28840,Lost/Stolen,  Internal  ,No,M. Dupont
+INC-20240277,2025-06-11 03:53:39,  France  ,Operations,Cloud Service,Phishing,Low,P4 - Low,,  Resolved  ,93 min,37,187,None,0,476,  Misconfiguration  ,  Internal  ,No,  L. Müller  
+INC-20240278,2024-08-22 16:24:08,Germany,Procurement,  Network Device  ,Data-Exfiltration,Medium,P3 - Medium,EDR,Contained,451,243,647,Minor,48,€ 7632,Insider Error,,No,J. Becker
+INC-20240279,2024-10-12 04:40:27,Luxembourg,R&D,Mobile Device,Lost/Stolen Device,High,  P2 - High  ,Email Gateway,Resolved,455,918,1470,Major,935,13396,Misconfiguration,Restricted,No,  L. Müller  
+INC-20240280,25 Jul 2025 04:51,Belgium,R&D,Email Account,Phishing,High,P2 - High,Threat Intel,Resolved,328,581,3858,Major,2998,18324 EUR,Lost/Stolen,,No,L. Müller
+INC-20240281,2025-04-06 04:49:49,Belgium,Procurement,Mobile Device,Phishing,  Medium  ,P3 - Medium,Audit,Contained,223,154,1124,Minor,137,2740,Social Engineering,Internal,No,  N. Laurent  
+INC-20240282,2025-06-24 00:27:53,Luxembourg,IT,Database,Data Exfiltration,Critical,P1 - Critical,User Report,Contained,1282,1031,10445,Minor,781,156081,Weak Password,Internal,  No  ,S. Rossi
+INC-20240283,20/06/2024 10:44,  Belgium  ,  Procurement  ,  Workstation  ,Stolen Device,Medium,P3 - Medium,IDS/IPS,Resolved,261,101,644,None,0,€ 3431,Weak Password,Confidential,No,L. Müller
+INC-20240284,2025-02-06 01:42:37,Germany,R&D,Database,DDoS,  Medium  ,P3 - Medium,Threat Intel,Resolved,286,213,1411,Minor,150,4284,Social Engineering,Restricted,Yes,E. Bernard
+INC-20240285,2025-07-15 08:12:43,France,  Procurement  ,  Cloud Service  ,Phishing,High,P2 High,  Threat Intel  ,Resolved,563,218,889,Moderate,245,4172,,Internal,Yes,  M. Dupont  
+INC-20240286,2025-05-09 01:28:46,Germany,Sales,Email Account,Phishing,Low,P4 - Low,User Report,Contained,95,55,296,Minor,37,323,Lost/Stolen,Internal,No,S. Rossi
+INC-20240287,2025-02-20 17:51:37,France,Finance,  Mobile Device  ,Phishing,High,P2 - High,Email Gateway,Eradicated,443,120,737,Minor,79,6012 EUR,Unpatched Vulnerability,Internal,No,S. Rossi
+INC-20240288,2024-11-30 07:46:04,France,Legal,Mobile Device,Malware,Medium,P3 Medium,IDS/IPS,Eradicated,181,309,-1196 min,None,0,1 195,Lost/Stolen,Confidential,No,A. Weber
+INC-20240289,2024-12-23 01:27:06,France,R&D,Server,Phising,Low,P4 - Low,EDR,Eradicated,99,113,236,Minor,30,214 EUR,Insider Error,,No,C. Schmidt
+INC-20240290,02-15-2025 23:43,Belgium,Legal,  Server  ,Ransomware,High,P2 - High,SIEM,Contained,1048,662,3002,Minor,334,12908,  Lost/Stolen  ,Internal,Yes,M. Dupont
+INC-20240291,2025-06-26 03:47:01,Belgium,Procurement,Database,  Phishing  ,Medium,P3 - Medium,Audit,Resolved,230,162,842,  Minor  ,74,2253,Weak Password,  Confidential  ,  Yes  ,J. Becker
+INC-20240292,2024-10-17 09:10:18,Luxembourg,Operations,Email Account,Data Exfiltration,Low,P4 - Low,EDR,Eradicated,309,26,672,  None  ,0,1441,Insider Error,Internal,No,N. Laurent
+INC-20240293,21 Jun 2024 21:19,Luxembourg,Finance,Mobile Device,Data Exfiltration,High,P2 - High,Email Gateway,Contained,722,836,1855 min,Moderate,665,33568,Lost/Stolen,Confidential,No,  E. Bernard  
+INC-20240294,2024-05-19 17:15:26,Belgium,Procurement,Cloud Service,DDoS,Medium,  P3 - Medium  ,,Resolved,140,161,182,Minor,12,2 123,Lost/Stolen,Confidential,  No  ,S. Rossi
+INC-20240295,2025-05-05 00:24:21,Belgium,Finance,  Workstation  ,Mal-ware,High,P2 - High,  SIEM  ,Resolved,694,788,1067,Major,452,9857 EUR,Misconfiguration,Internal,No,  E. Bernard  
+INC-20240296,2024-11-20 15:01:27,Belgium,HR,Network Device,Phshing,Medium,p3-medium,,Resolved,302,208,-1192,Moderate,273,2098,  Social Engineering  ,,Yes,A. Weber
+INC-20240297,2025-08-03 23:28:18,Luxembourg,  Sales  ,Server,Misconfiguration,  High  ,p2-high,  IDS/IPS  ,  Contained  ,1115,478,2039,  Major  ,966 min,7058,Insider Error,Internal,No,  C. Schmidt  
+INC-20240298,2024-06-28 07:02:42,France,Facilities,Application,Phishing,Medium,P3 - Medium,IDS/IPS,Resolved,118,118,1447,  None  ,0,€ 1649,Social Engineering,Confidential,Yes,C. Schmidt
+INC-20240299,2025-03-04 08:57:46,Belgium,R&D,Email Account,  Misconfiguration  ,Critical,P1 Critical,Threat Intel,Eradicated,1037,518,1542,Minor,171,54742,Insider Error,Confidential,No,J. Becker
+INC-20240300,08-07-2024 06:23,Luxembourg,Sales,  Network Device  ,Malware,High,P2 - High,,Contained,727,505,1074,Minor,77,22 284,Insider Error,Confidential,Yes,M. Dupont
+INC-20240109,2024-05-05 02:38:31,Belgium,HR,Email Account,Phishing,Medium,P3 - Medium,EDR,Contained,222,105,1616,  Minor  ,-154,981,,Internal,No,M. Dupont
+INC-20240085,2024-07-25 13:57:03,Belgium,Procurement,  Workstation  ,Phishing,Medium,P3 - Medium,Email Gateway,Resolved,-198,331,916,None,0,1056,Third-Party Supplier,Internal,,C. Schmidt
+INC-20240120,2024-09-27 07:53:04,Belgium,Legal,Cloud Service,Unauthorized Access,Medium,P3 - Medium,SIEM,Resolved,244,303,701 min,Minor,88,2227,Lost/Stolen,Public,  No  ,A. Weber
+INC-20240268,2024-08-14 07:26:31,Luxembourg,IT,Network Device,Malware,  High  ,P2 - High,Audit,Resolved,384,478,3825,Minor,330,6533,Social Engineering,Internal,  No  ,E. Bernard
+INC-20240135,2024-08-08 07:18:46,Luxembourg,Facilities,Mobile Device,Phishing,Medium,P3 - Medium,EDR,Contained,180,186,691,None,0,1030,Insider Error,Internal,No,J. Becker
+INC-20240009,2025-01-17 00:08:12,France,  Finance  ,Email Account,  Data Exfiltration  ,Medium,P3 - Medium,EDR,Contained,366,516,2915,Moderate,658,3042,Weak Password,Restricted,No,E. Bernard
+INC-20240071,2024-06-08 03:51:00,Germany,Sales,Cloud Service,Phishing,Medium,P3 - Medium,Email Gateway,Resolved,202,599 min,460,Moderate,152,2605,Unpatched Vulnerability,Confidential,No,S. Rossi
+INC-20240231,2025-04-18 16:18:00,Belgium,R&D,Email Account,Unauthorized  Access,Medium,P3 - Medium,Audit,Resolved,360 min,810,1370,Major,1053,3982,  Unpatched Vulnerability  ,  Internal  ,  Yes  ,N. Laurent
+INC-20240117,2025-05-15 21:25:09,Luxembourg,HR,Application,Phishing,Medium,P3 - Medium,IDS/IPS,Eradicated,210,-88,438,Minor,39,987,Lost/Stolen,Public,Yes,C. Schmidt
+INC-20240151,2025-08-14 09:59:19,France,R&D,Network Device,Unauthorized Access,Low,P4 - Low,Threat Intel,Contained,189,194,228,Moderate,59,€ 1170,  Insider Error  ,Restricted,No,N. Laurent
+INC-20240062,2025-06-16 15:22:28,France,IT,Email Account,Misconfiguration,Low,low (P4),Audit,Eradicated,-150,64,198,Moderate,75,354,Third-Party Supplier,Internal,No,  S. Rossi  
+INC-20240020,2025-05-28 05:45:54,France,Facilities,Mobile Device,Phishing,  Medium  ,p3-medium,,Resolved,246,170,1158,Minor,137,2974,Weak Password,Internal,  No  ,M. Dupont
+INC-20240199,2025-02-21 11:27:17,France,Finance,Mobile Device,Lost/Stolen Device,Critical,critical (P1),IDS/IPS,Contained,861,1134,7843,  Moderate  ,1742 min,112349,  Insider Error  ,Restricted,Yes,N. Laurent
+INC-20240161,2025-04-20 12:58:45,France,Legal,Application,Ddos,Medium,P3 Medium,EDR,Contained,137,113,593,Minor,47,4 129,Insider Error,Internal,,  L. Müller  
+INC-20240121,2024-08-28 23:43:00,  Luxembourg  ,Finance,  Email Account  ,Maleware,Medium,P3 - Medium,EDR,Resolved,248,166,1450,Minor,113 min,4059,Insider Error,Internal,No,N. Laurent
