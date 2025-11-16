@@ -1,0 +1,301 @@
+Incident_ID;Date_Incident;Region;Department_Affected;Asset_Type;Incident_Type;Severity;Priority;Detection_Source;Status;Time_to_Detect_min;Time_to_Contain_min;Time_to_Resolve_min;Business_Impact;Downtime_min;Estimated_Cost_EUR;Root_Cause;Data_Sensitivity;SLA_Breached;Analyst;Year;Month;Resolve_Hours;Is_Critical
+INC-20240001;02/12/2024 05:04;Luxembourg;Procurement;Server;Unauthorized Access;Low;;;In Progress;204;78;495;Minor;39;336;Weak Password;Public;Yes;A. Weber;2024;décembre;8,25;0
+INC-20240002;21/06/2025 08:01;Germany;Sales;Workstation;Unauthorized Access;High;;Threat Intel;Resolved;1606;1443;4153;Moderate;;33999;Insider Error;Internal;No;L. Müller;2025;juin;69,22;0
+INC-20240003;26/07/2024 13:04;France;Sales;Workstation;Lost/Stolen Device;Medium;;Audit;In Progress;175;207;479;None;0;2479;;Restricted;No;E. Bernard;2024;juillet;7,98;0
+INC-20240004;31/10/2024 02:31;Luxembourg;Operations;Email Account;Misconfiguration;Medium;;SIEM;Resolved;207;79;534;Moderate;170;887;Lost/Stolen;;No;C. Schmidt;2024;octobre;8,9;0
+INC-20240005;30/06/2024 22:10;Belgium;Procurement;Cloud Service;Phishing;Low;;User Report;In Progress;97;34;676;Moderate;166;374;Social Engineering;Restricted;No;L. Müller;2024;juin;11,27;0
+INC-20240006;08/12/2024 01:10;France;R&D;Email Account;Data Exfiltration;Critical;;SIEM;Eradicated;1710;1425;8003;Moderate;2555;105884;Third-Party Supplier;Confidential;No;J. Becker;2024;décembre;133,38;1
+INC-20240007;14/01/2025 05:05;Belgium;Procurement;Email Account;Malware;Critical;;Audit;Resolved;566;622;2007;Minor;155;102816;Third-Party Supplier;Internal;Yes;S. Rossi;2025;janvier;33,45;1
+INC-20240008;08/08/2024 05:33;Belgium;R&D;Server;Ransomware;Medium;;EDR;Eradicated;1006;543;;None;0;6160;;Internal;No;A. Weber;2024;août;;0
+INC-20240009;16/01/2025 23:20;France;Finance;Email Account;Data Exfiltration;Medium;;EDR;Contained;366;516;2915;Moderate;658;3042;Weak Password;Restricted;No;E. Bernard;2025;janvier;48,58;0
+INC-20240010;04/08/2024 22:45;France;Procurement;Cloud Service;Lost/Stolen Device;High;;User Report;Eradicated;565;373;1322;Minor;123;8444;Unpatched Vulnerability;Internal;;A. Weber;2024;août;22,03;0
+INC-20240011;24/04/2025 11:11;Belgium;IT;Cloud Service;Unauthorized Access;High;;Email Gateway;Resolved;447;684;1982;None;0;26936;;Confidential;No;S. Rossi;2025;avril;33,03;0
+INC-20240012;14/01/2025 19:12;Germany;Operations;Cloud Service;Phishing;Medium;;Audit;Eradicated;106;115;935;Minor;;2745;Insider Error;;No;J. Becker;2025;janvier;15,58;0
+INC-20240013;09/12/2024 21:25;Belgium;IT;Server;Phishing;Low;;Audit;Resolved;163;86;130;Minor;15;429;Unpatched Vulnerability;Public;Yes;C. Schmidt;2024;décembre;2,17;0
+INC-20240014;23/11/2024 19:37;Belgium;Facilities;Cloud Service;Phishing;Low;;Threat Intel;In Progress;124;55;251;Moderate;66;263;Misconfiguration;;Yes;N. Laurent;2024;novembre;4,18;0
+INC-20240015;12/06/2024 23:47;Luxembourg;IT;Database;Malware;Medium;;;Eradicated;431;461;896;Moderate;207;3775;Lost/Stolen;Public;Yes;J. Becker;2024;juin;14,93;0
+INC-20240016;04/07/2024 16:08;Luxembourg;IT;Workstation;Phishing;Low;;SIEM;Resolved;161;64;543;Minor;63;358;Lost/Stolen;;;J. Becker;2024;juillet;9,05;0
+INC-20240017;11/05/2025 00:04;Germany;Sales;Application;Phishing;Low;;IDS/IPS;In Progress;30;65;182;None;0;364;Insider Error;Restricted;No;J. Becker;2025;mai;3,03;0
+INC-20240018;19/06/2024 11:25;Luxembourg;IT;Application;Phishing;Low;;Email Gateway;Resolved;172;87;481;Major;273;516;Third-Party Supplier;Internal;No;M. Dupont;2024;juin;8,02;0
+INC-20240019;14/12/2024 14:42;Luxembourg;Operations;Workstation;Misconfiguration;Low;;Email Gateway;Contained;55;;266;None;0;161;Insider Error;Internal;No;E. Bernard;2024;décembre;4,43;0
+INC-20240020;28/05/2025 04:45;France;Facilities;Mobile Device;Phishing;Medium;;;Resolved;246;170;1158;Minor;137;2974;Weak Password;Internal;No;M. Dupont;2025;mai;19,3;0
+INC-20240021;10/04/2025 02:30;Belgium;Legal;Email Account;Phishing;Low;;User Report;In Progress;81;45;170;Minor;20;563;;Confidential;No;A. Weber;2025;avril;2,83;0
+INC-20240022;02/08/2024 04:53;France;Finance;Server;Unauthorized Access;High;;Audit;Resolved;673;909;3152;Major;;14257;Social Engineering;Internal;Yes;C. Schmidt;2024;août;52,53;0
+INC-20240023;31/08/2025 09:08;Luxembourg;Finance;Database;Phishing;Medium;;Threat Intel;Eradicated;188;108;588;Minor;59;2454;Weak Password;Internal;Yes;E. Bernard;2025;août;9,8;0
+INC-20240024;27/04/2024 04:04;Luxembourg;HR;Workstation;Phishing;Low;;Threat Intel;Eradicated;165;79;;Moderate;102;223;Third-Party Supplier;Public;Yes;E. Bernard;2024;avril;;0
+INC-20240025;28/05/2024 13:01;Belgium;Operations;Server;Malware;Critical;;;Resolved;601;1278;5374;Major;2356;83364;Lost/Stolen;Internal;No;S. Rossi;2024;mai;89,57;1
+INC-20240026;16/10/2024 15:00;Luxembourg;HR;Mobile Device;Lost/Stolen Device;Low;;Threat Intel;Resolved;353;59;316;Minor;24;443;Lost/Stolen;Confidential;No;L. Müller;2024;octobre;5,27;0
+INC-20240027;27/05/2024 17:08;Belgium;Operations;Application;Phishing;Medium;;IDS/IPS;Eradicated;;188;833;None;0;2258;Lost/Stolen;Confidential;Yes;L. Müller;2024;mai;13,88;0
+INC-20240028;;Germany;Procurement;Mobile Device;Malware;Medium;;SIEM;Contained;133;;2143;None;0;4167;Social Engineering;Internal;No;E. Bernard;;;35,72;0
+INC-20240029;05/03/2025 15:53;Luxembourg;R&D;Cloud Service;Phishing;Medium;;IDS/IPS;Contained;145;122;;Minor;76;687;Misconfiguration;Public;No;L. Müller;2025;mars;;0
+INC-20240030;22/03/2025 22:41;France;Finance;Email Account;Malware;Low;;Email Gateway;Eradicated;127;35;325;Moderate;105;269;;Internal;No;S. Rossi;2025;mars;5,42;0
+INC-20240031;13/10/2024 22:24;France;R&D;Workstation;Phishing;Medium;;IDS/IPS;Eradicated;149;351;405;Minor;50;2900;Misconfiguration;Confidential;No;C. Schmidt;2024;octobre;6,75;0
+INC-20240032;15/08/2025 06:10;Luxembourg;Sales;Mobile Device;Malware;Medium;;SIEM;Resolved;;270;344;Minor;40;3104;Lost/Stolen;Internal;No;L. Müller;2025;août;5,73;0
+INC-20240033;01/07/2024 16:34;Germany;Operations;Database;Phishing;Low;;EDR;Eradicated;102;106;454;Major;246;282;Unpatched Vulnerability;Confidential;Yes;M. Dupont;2024;juillet;7,57;0
+INC-20240034;30/09/2025 16:54;Luxembourg;Procurement;Cloud Service;DDoS;Medium;;Threat Intel;Contained;511;364;1342;Moderate;496;4496;Unpatched Vulnerability;Confidential;No;C. Schmidt;2025;septembre;22,37;0
+INC-20240035;16/09/2025 15:32;Germany;HR;Application;Lost/Stolen Device;High;;EDR;Eradicated;522;;2455;Moderate;517;6912;Unpatched Vulnerability;;No;J. Becker;2025;septembre;40,92;0
+INC-20240036;04/02/2025 08:32;France;Legal;Mobile Device;Unauthorized Access;Medium;;Email Gateway;Contained;201;512;1071;None;0;2428;Unpatched Vulnerability;Internal;No;L. Müller;2025;février;17,85;0
+INC-20240037;17/06/2025 02:16;Belgium;R&D;Database;Phishing;Low;;Threat Intel;Resolved;73;80;;Minor;47;558;Insider Error;;No;N. Laurent;2025;juin;;0
+INC-20240038;22/05/2025 15:15;Belgium;Facilities;Cloud Service;Malware;Critical;;IDS/IPS;In Progress;518;1086;8987;Minor;679;86888;Weak Password;Internal;No;N. Laurent;2025;mai;149,78;1
+INC-20240039;15/05/2024 14:20;Luxembourg;Finance;Database;Data Exfiltration;Critical;;User Report;Resolved;1815;1723;9899;Major;7336;353820;Unpatched Vulnerability;Public;;L. Müller;2024;mai;164,98;1
+INC-20240040;27/01/2025 15:20;France;Finance;Application;Malware;Medium;;SIEM;Resolved;;235;2238;Moderate;702;3051;Weak Password;Restricted;;M. Dupont;2025;janvier;37,3;0
+INC-20240041;27/12/2024 07:15;Luxembourg;HR;Cloud Service;DDoS;High;;User Report;In Progress;961;365;1181;Moderate;447;26161;Weak Password;Internal;Yes;E. Bernard;2024;décembre;19,68;0
+INC-20240042;13/08/2024 05:57;France;Finance;Workstation;DDoS;Medium;;IDS/IPS;Resolved;454;251;1723;Moderate;366;5081;Misconfiguration;Internal;;M. Dupont;2024;août;28,72;0
+INC-20240043;20/02/2025 21:51;Luxembourg;IT;Mobile Device;Unauthorized Access;Critical;;Email Gateway;In Progress;1218;971;2425;Minor;293;100788;Social Engineering;Public;No;A. Weber;2025;février;40,42;1
+INC-20240044;23/04/2025 23:08;Germany;HR;Database;Misconfiguration;High;;User Report;Resolved;167;256;436;None;0;10595;Insider Error;Internal;No;J. Becker;2025;avril;7,27;0
+INC-20240045;14/03/2025 08:56;Luxembourg;Sales;Application;Malware;High;;;Resolved;337;388;1491;Minor;182;19368;Third-Party Supplier;Confidential;No;A. Weber;2025;mars;24,85;0
+INC-20240046;16/04/2025 09:24;France;Sales;Email Account;Ransomware;High;;Email Gateway;Contained;759;1546;6774;Minor;620;23091;Unpatched Vulnerability;Public;No;J. Becker;2025;avril;112,9;0
+INC-20240047;02/09/2025 16:19;Luxembourg;Finance;Email Account;Unauthorized Access;Medium;;User Report;In Progress;412;325;1372;Minor;161;4682;Unpatched Vulnerability;Internal;No;J. Becker;2025;septembre;22,87;0
+INC-20240048;22/03/2025 12:48;Germany;Sales;Email Account;Unauthorized Access;Medium;;IDS/IPS;Eradicated;2824;730;2682;Major;1985;3608;Insider Error;Internal;Yes;S. Rossi;2025;mars;44,7;0
+INC-20240049;07/10/2025 21:43;France;Finance;Cloud Service;Phishing;Medium;;IDS/IPS;Eradicated;158;143;484;Minor;47;2038;Unpatched Vulnerability;Internal;No;S. Rossi;2025;octobre;8,07;0
+INC-20240050;;Germany;Finance;Workstation;Phishing;Critical;;Email Gateway;Eradicated;669;913;984;Minor;70;20023;Misconfiguration;Internal;Yes;A. Weber;;;16,4;1
+INC-20240051;23/06/2024 14:35;Germany;Finance;Workstation;Phishing;High;;User Report;Contained;286;446;1077;None;0;5962;Third-Party Supplier;Restricted;Yes;L. Müller;2024;juin;17,95;0
+INC-20240052;05/12/2024 19:01;Germany;Facilities;Application;Phishing;Medium;;IDS/IPS;Resolved;182;146;959;Moderate;210;2042;Misconfiguration;;No;M. Dupont;2024;décembre;15,98;0
+INC-20240053;10/07/2024 05:43;Belgium;HR;Server;Lost/Stolen Device;Low;;User Report;Contained;311;90;78;Minor;9;289;;Confidential;No;A. Weber;2024;juillet;1,3;0
+INC-20240054;26/07/2025 02:35;Belgium;Sales;Cloud Service;Phishing;Medium;;EDR;Contained;302;141;786;Moderate;168;3156;Unpatched Vulnerability;Confidential;No;S. Rossi;2025;juillet;13,1;0
+INC-20240055;07/02/2025 15:59;Luxembourg;Facilities;Email Account;Phishing;Low;;Audit;In Progress;132;83;105;Minor;;220;Social Engineering;Internal;No;M. Dupont;2025;février;1,75;0
+INC-20240056;30/12/2024 00:56;Luxembourg;Operations;Workstation;Unauthorized Access;Critical;;Threat Intel;Resolved;;3167;6683;Moderate;2197;110048;Social Engineering;Internal;No;S. Rossi;2024;décembre;111,38;1
+INC-20240057;20/10/2024 21:18;Germany;Facilities;Server;Malware;High;;EDR;Eradicated;2019;1085;1041;Major;570;20453;Social Engineering;Internal;Yes;S. Rossi;2024;octobre;17,35;0
+INC-20240058;02/06/2025 20:01;Luxembourg;Facilities;Server;Malware;High;;;Eradicated;395;449;2291;Minor;225;6828;Weak Password;Restricted;No;A. Weber;2025;juin;38,18;0
+INC-20240059;27/10/2024 18:52;France;Facilities;Application;Unauthorized Access;High;;Threat Intel;Contained;183;301;1732;Minor;162;22524;Social Engineering;Internal;No;J. Becker;2024;octobre;28,87;0
+INC-20240060;19/12/2024 05:45;France;Procurement;Workstation;Misconfiguration;Medium;;Email Gateway;In Progress;93;92;498;None;0;1961;Unpatched Vulnerability;;No;J. Becker;2024;décembre;8,3;0
+INC-20240061;10/02/2025 18:31;France;R&D;Application;Lost/Stolen Device;Medium;;EDR;Eradicated;420;199;439;Minor;32;2864;;;Yes;S. Rossi;2025;février;7,32;0
+INC-20240062;16/06/2025 12:22;France;IT;Email Account;Misconfiguration;Low;;Audit;Eradicated;;64;198;Moderate;75;354;Third-Party Supplier;Internal;No;S. Rossi;2025;juin;3,3;0
+INC-20240063;09/05/2025 16:34;France;Operations;Cloud Service;Malware;Medium;;;Eradicated;452;96;2589;Minor;327;2522;;Confidential;;J. Becker;2025;mai;43,15;0
+INC-20240064;20/09/2024 18:02;Luxembourg;HR;Mobile Device;Data Exfiltration;Critical;;Threat Intel;Contained;659;1657;3964;Minor;294;126547;Lost/Stolen;;No;J. Becker;2024;septembre;66,07;1
+INC-20240065;23/09/2024 02:43;Germany;Sales;Mobile Device;Phishing;Low;;Email Gateway;Resolved;110;107;347;Moderate;112;577;Insider Error;Public;No;N. Laurent;2024;septembre;5,78;0
+INC-20240066;30/08/2025 19:41;Luxembourg;Finance;Cloud Service;Lost/Stolen Device;Medium;;Audit;Resolved;260;386;1502;Moderate;391;1421;;Restricted;No;N. Laurent;2025;août;25,03;0
+INC-20240067;29/07/2024 16:09;Belgium;Sales;Workstation;Lost/Stolen Device;High;;SIEM;Eradicated;925;;2033;Moderate;563;17347;Weak Password;;No;S. Rossi;2024;juillet;33,88;0
+INC-20240068;19/10/2024 06:11;Belgium;Finance;Database;Phishing;Low;;Email Gateway;Resolved;147;92;248;Moderate;90;323;Misconfiguration;Restricted;Yes;J. Becker;2024;octobre;4,13;0
+INC-20240069;07/08/2025 10:28;Belgium;Finance;Application;Unauthorized Access;High;;IDS/IPS;Resolved;1215;984;5736;Moderate;1535;33826;Social Engineering;;No;E. Bernard;2025;août;95,6;0
+INC-20240070;25/08/2025 03:52;Belgium;R&D;Mobile Device;Malware;Medium;;Email Gateway;Eradicated;435;381;1198;Major;913;3450;;Internal;No;N. Laurent;2025;août;19,97;0
+INC-20240071;07/06/2024 22:04;Germany;Sales;Cloud Service;Phishing;Medium;;Email Gateway;Resolved;202;599;460;Moderate;152;2605;Unpatched Vulnerability;Confidential;No;S. Rossi;2024;juin;7,67;0
+INC-20240072;28/02/2025 16:02;Luxembourg;Legal;Network Device;Unauthorized Access;Critical;;;Resolved;806;1790;7641;Moderate;1730;158166;;Confidential;Yes;S. Rossi;2025;février;127,35;1
+INC-20240073;13/09/2025 09:55;Belgium;Sales;Application;DDoS;High;;Threat Intel;Eradicated;;307;3101;Minor;282;7850;Lost/Stolen;Internal;Yes;M. Dupont;2025;septembre;51,68;0
+INC-20240074;29/05/2025 20:17;France;Finance;Database;Phishing;High;;SIEM;Eradicated;529;517;1201;Moderate;385;4667;Weak Password;Internal;No;E. Bernard;2025;mai;20,02;0
+INC-20240075;06/08/2024 08:30;Germany;IT;Mobile Device;Unauthorized Access;Critical;;Email Gateway;Eradicated;2001;1408;5470;Major;2464;295672;Weak Password;Confidential;No;E. Bernard;2024;août;91,17;1
+INC-20240076;26/05/2024 11:04;Germany;Finance;Server;Unauthorized Access;Medium;;User Report;Resolved;294;97;346;None;0;6129;;;No;N. Laurent;2024;mai;5,77;0
+INC-20240077;28/07/2024 17:48;Germany;Sales;Workstation;Unauthorized Access;High;;Audit;Eradicated;655;588;3158;Moderate;904;32278;;Internal;Yes;C. Schmidt;2024;juillet;52,63;0
+INC-20240078;20/04/2025 02:12;Germany;Sales;Cloud Service;Phishing;Medium;;SIEM;Resolved;389;160;355;Minor;25;1844;;Internal;No;A. Weber;2025;avril;5,92;0
+INC-20240079;14/11/2024 02:29;Belgium;Operations;Cloud Service;Phishing;Low;;IDS/IPS;Resolved;221;64;530;Major;406;301;Lost/Stolen;Restricted;Yes;S. Rossi;2024;novembre;8,83;0
+INC-20240080;08/08/2024 00:56;Belgium;IT;Mobile Device;Lost/Stolen Device;Medium;;Threat Intel;Resolved;633;363;809;Moderate;202;3960;Third-Party Supplier;Internal;Yes;A. Weber;2024;août;13,48;0
+INC-20240081;22/06/2024 17:20;Germany;Legal;Server;Phishing;Low;;EDR;False Positive;94;43;183;None;0;372;Third-Party Supplier;Public;No;E. Bernard;2024;juin;3,05;0
+INC-20240082;21/08/2025 14:37;Germany;Finance;Application;Malware;Critical;;Audit;Resolved;422;1189;4096;None;0;121899;Weak Password;Confidential;;S. Rossi;2025;août;68,27;1
+INC-20240083;16/03/2025 13:52;France;Facilities;Database;Phishing;Low;;SIEM;Resolved;199;76;1044;Moderate;271;190;Weak Password;Confidential;No;L. Müller;2025;mars;17,4;0
+INC-20240084;26/07/2025 14:31;Germany;Finance;Mobile Device;Malware;High;;EDR;Eradicated;347;124;1050;Minor;110;6361;Social Engineering;Internal;Yes;J. Becker;2025;juillet;17,5;0
+INC-20240085;25/07/2024 13:34;Belgium;Procurement;Workstation;Phishing;Medium;;Email Gateway;Resolved;;331;916;None;0;1056;Third-Party Supplier;Internal;;C. Schmidt;2024;juillet;15,27;0
+INC-20240086;09/06/2024 10:28;France;Legal;Server;Misconfiguration;High;;Email Gateway;False Positive;304;148;3456;Minor;435;13043;Unpatched Vulnerability;Confidential;Yes;M. Dupont;2024;juin;57,6;0
+INC-20240087;28/01/2025 20:54;Belgium;R&D;Workstation;Malware;Medium;;Email Gateway;Resolved;307;;206;None;0;4193;Lost/Stolen;Confidential;Yes;E. Bernard;2025;janvier;3,43;0
+INC-20240088;24/04/2024 06:36;Belgium;R&D;Server;Data Exfiltration;High;;User Report;Resolved;1649;679;6052;Minor;574;17710;Weak Password;Public;No;N. Laurent;2024;avril;100,87;0
+INC-20240089;16/03/2025 20:39;Luxembourg;IT;Network Device;Malware;Medium;;User Report;Resolved;240;184;;Minor;53;1463;Weak Password;Confidential;No;N. Laurent;2025;mars;;0
+INC-20240090;24/09/2025 04:08;France;R&D;Server;Ransomware;High;;IDS/IPS;Resolved;1539;955;4901;Minor;410;38379;Third-Party Supplier;Internal;No;A. Weber;2025;septembre;81,68;0
+INC-20240091;13/11/2024 10:58;Belgium;HR;Email Account;Phishing;Critical;;IDS/IPS;Eradicated;280;981;2531;None;0;96321;Weak Password;Internal;No;S. Rossi;2024;novembre;42,18;1
+INC-20240092;15/04/2025 02:37;Germany;IT;Database;Malware;High;;SIEM;In Progress;355;649;1499;Minor;154;15809;Weak Password;Confidential;No;N. Laurent;2025;avril;24,98;0
+INC-20240093;09/05/2024 11:49;Belgium;Facilities;Mobile Device;Data Exfiltration;High;;SIEM;In Progress;695;936;3393;None;0;14814;Weak Password;Internal;No;M. Dupont;2024;mai;56,55;0
+INC-20240094;25/03/2025 06:07;Luxembourg;Procurement;Server;Malware;Medium;;Email Gateway;False Positive;414;305;250;Minor;23;2645;Lost/Stolen;Internal;No;S. Rossi;2025;mars;4,17;0
+INC-20240095;21/09/2024 23:51;Luxembourg;HR;Application;Phishing;Low;;EDR;Resolved;96;77;532;Minor;49;430;Lost/Stolen;Internal;No;C. Schmidt;2024;septembre;8,87;0
+INC-20240096;26/06/2024 17:04;Germany;Sales;Email Account;Misconfiguration;Medium;;Email Gateway;Contained;197;61;557;Minor;54;2770;Third-Party Supplier;Public;No;A. Weber;2024;juin;9,28;0
+INC-20240097;19/07/2024 22:23;Germany;Facilities;Workstation;Phishing;Medium;;EDR;Resolved;75;123;237;None;0;969;;Confidential;No;J. Becker;2024;juillet;3,95;0
+INC-20240098;04/04/2025 03:04;Belgium;IT;Cloud Service;Ransomware;Critical;;Audit;In Progress;;2162;;Minor;331;167715;Misconfiguration;Internal;No;C. Schmidt;2025;avril;;1
+INC-20240099;;Luxembourg;Legal;Server;Malware;Medium;;IDS/IPS;Contained;234;290;398;Minor;32;1120;;Internal;No;S. Rossi;;;6,63;0
+INC-20240100;11/04/2025 11:17;Germany;HR;Server;Malware;Medium;;IDS/IPS;Resolved;234;110;357;None;0;1300;Insider Error;Confidential;No;M. Dupont;2025;avril;5,95;0
+INC-20240101;24/04/2025 11:14;Belgium;Operations;Mobile Device;Unauthorized Access;Medium;;Threat Intel;In Progress;321;150;723;Minor;;4849;Unpatched Vulnerability;Restricted;Yes;E. Bernard;2025;avril;12,05;0
+INC-20240102;09/10/2025 01:22;France;HR;Database;Misconfiguration;Low;;User Report;Contained;77;43;283;Moderate;103;526;Lost/Stolen;Confidential;;S. Rossi;2025;octobre;4,72;0
+INC-20240103;17/12/2024 16:10;France;Facilities;Cloud Service;Data Exfiltration;Low;;Email Gateway;Eradicated;229;107;693;Minor;56;495;Lost/Stolen;Confidential;No;L. Müller;2024;décembre;11,55;0
+INC-20240104;08/03/2025 10:15;Germany;Procurement;Database;Malware;Critical;;User Report;Resolved;1754;1129;1302;Major;836;88368;Lost/Stolen;Confidential;No;A. Weber;2025;mars;21,7;1
+INC-20240105;01/08/2024 18:47;Luxembourg;Sales;Server;Unauthorized Access;Critical;;;Contained;1946;889;;Minor;573;150855;Misconfiguration;Restricted;Yes;N. Laurent;2024;août;;1
+INC-20240106;10/04/2025 00:58;Germany;IT;Database;Phishing;High;;;Eradicated;636;395;949;Moderate;290;6486;Misconfiguration;Restricted;No;A. Weber;2025;avril;15,82;0
+INC-20240107;27/03/2025 05:19;Belgium;IT;Email Account;Malware;Low;;Threat Intel;In Progress;115;;211;Moderate;48;872;Lost/Stolen;Public;No;J. Becker;2025;mars;3,52;0
+INC-20240108;24/11/2024 05:26;Germany;Finance;Email Account;Unauthorized Access;Critical;;User Report;Eradicated;523;1874;5474;None;0;135675;Weak Password;Internal;No;J. Becker;2024;novembre;91,23;1
+INC-20240109;04/05/2024 23:00;Belgium;HR;Email Account;Phishing;Medium;;EDR;Contained;222;105;1616;Minor;;981;;Internal;No;M. Dupont;2024;mai;26,93;0
+INC-20240110;19/09/2025 18:28;Luxembourg;R&D;Application;Ransomware;High;;SIEM;Resolved;2679;1045;2826;Major;1844;38885;Social Engineering;Internal;Yes;M. Dupont;2025;septembre;47,1;0
+INC-20240111;24/03/2025 04:51;Luxembourg;Legal;Mobile Device;Malware;High;;Threat Intel;Resolved;356;620;1266;Moderate;308;10590;Lost/Stolen;Confidential;No;J. Becker;2025;mars;21,1;0
+INC-20240112;30/07/2025 01:20;France;Operations;Workstation;Unauthorized Access;Critical;;Threat Intel;Contained;663;826;1959;None;0;236334;Weak Password;Internal;No;N. Laurent;2025;juillet;32,65;1
+INC-20240113;30/10/2024 10:25;France;IT;Mobile Device;Lost/Stolen Device;Medium;;IDS/IPS;Contained;239;125;560;Minor;;2952;Social Engineering;Internal;No;J. Becker;2024;octobre;9,33;0
+INC-20240114;08/09/2025 18:06;France;Procurement;Email Account;Misconfiguration;Medium;;Threat Intel;Contained;;272;1627;Major;1018;1308;Misconfiguration;Public;No;S. Rossi;2025;septembre;27,12;0
+INC-20240115;14/02/2025 11:09;Germany;R&D;Network Device;Unauthorized Access;Medium;;;In Progress;206;268;510;None;0;2521;Misconfiguration;Public;No;C. Schmidt;2025;février;8,5;0
+INC-20240116;15/06/2024 02:43;Germany;Legal;Network Device;Unauthorized Access;Medium;;SIEM;Contained;212;;761;Moderate;199;4340;;Confidential;;S. Rossi;2024;juin;12,68;0
+INC-20240117;15/05/2025 20:39;Luxembourg;HR;Application;Phishing;Medium;;IDS/IPS;Eradicated;210;;438;Minor;39;987;Lost/Stolen;Public;Yes;C. Schmidt;2025;mai;7,3;0
+INC-20240118;12/08/2024 00:56;Belgium;Facilities;Database;Malware;Medium;;;Contained;244;;;Minor;43;3592;Lost/Stolen;Internal;No;E. Bernard;2024;août;;0
+INC-20240119;03/09/2024 02:41;Germany;HR;Application;Data Exfiltration;Critical;;SIEM;Resolved;1779;2960;1307;Minor;118;285001;Lost/Stolen;Restricted;No;M. Dupont;2024;septembre;21,78;1
+INC-20240120;26/09/2024 23:13;Belgium;Legal;Cloud Service;Unauthorized Access;Medium;;SIEM;Resolved;244;303;701;Minor;88;2227;Lost/Stolen;Public;No;A. Weber;2024;septembre;11,68;0
+INC-20240121;28/08/2024 22:16;Luxembourg;Finance;Email Account;Malware;Medium;;EDR;Resolved;248;166;1450;Minor;113;4059;Insider Error;Internal;No;N. Laurent;2024;août;24,17;0
+INC-20240122;02/07/2024 16:22;Germany;Procurement;Mobile Device;Misconfiguration;Low;;User Report;Resolved;191;67;266;Major;127;475;Lost/Stolen;Internal;No;S. Rossi;2024;juillet;4,43;0
+INC-20240123;23/08/2024 18:51;Belgium;Sales;Network Device;Malware;Critical;;User Report;Eradicated;646;1625;3885;None;0;151389;Insider Error;Internal;No;E. Bernard;2024;août;64,75;1
+INC-20240124;24/01/2025 04:33;France;Procurement;Server;Misconfiguration;Low;;Email Gateway;Resolved;109;22;136;Moderate;39;218;Third-Party Supplier;Restricted;Yes;C. Schmidt;2025;janvier;2,27;0
+INC-20240125;17/05/2024 02:57;Luxembourg;Sales;Cloud Service;Misconfiguration;Medium;;Threat Intel;Resolved;251;432;911;Moderate;254;1822;Third-Party Supplier;Confidential;No;E. Bernard;2024;mai;15,18;0
+INC-20240126;07/06/2025 10:49;Germany;Finance;Workstation;Unauthorized Access;Medium;;User Report;In Progress;307;283;1600;Minor;123;6166;Misconfiguration;Internal;No;S. Rossi;2025;juin;26,67;0
+INC-20240127;06/04/2025 14:31;Belgium;Legal;Server;Malware;High;;IDS/IPS;Eradicated;345;829;2293;Moderate;737;16151;Weak Password;Internal;Yes;M. Dupont;2025;avril;38,22;0
+INC-20240128;20/06/2025 09:02;Belgium;Legal;Mobile Device;Phishing;High;;User Report;Resolved;475;461;1955;Moderate;463;7522;Misconfiguration;Restricted;No;E. Bernard;2025;juin;32,58;0
+INC-20240129;30/07/2025 08:45;Belgium;Legal;Workstation;Ransomware;Medium;;SIEM;Eradicated;836;293;1878;Minor;;9209;Third-Party Supplier;Confidential;No;J. Becker;2025;juillet;31,3;0
+INC-20240130;02/09/2024 09:37;France;R&D;Mobile Device;Malware;Low;;SIEM;In Progress;79;80;141;None;0;831;Third-Party Supplier;;No;E. Bernard;2024;septembre;2,35;0
+INC-20240131;29/01/2025 22:41;Luxembourg;HR;Server;Phishing;Medium;;EDR;Eradicated;252;129;645;Moderate;162;2529;Social Engineering;Internal;No;S. Rossi;2025;janvier;10,75;0
+INC-20240132;03/06/2024 01:25;Belgium;Legal;Application;Phishing;Medium;;Email Gateway;In Progress;251;250;1461;Minor;163;2062;Third-Party Supplier;Confidential;Yes;C. Schmidt;2024;juin;24,35;0
+INC-20240133;18/02/2025 21:37;France;Procurement;Application;Phishing;Critical;;Audit;Resolved;618;452;1159;Moderate;339;118399;Misconfiguration;Confidential;No;M. Dupont;2025;février;19,32;1
+INC-20240134;15/05/2024 21:43;Germany;Sales;Cloud Service;Lost/Stolen Device;Medium;;Audit;Contained;624;296;524;Moderate;157;2799;Misconfiguration;Internal;No;N. Laurent;2024;mai;8,73;0
+INC-20240135;08/08/2024 06:56;Luxembourg;Facilities;Mobile Device;Phishing;Medium;;EDR;Contained;180;186;691;None;0;1030;Insider Error;Internal;No;J. Becker;2024;août;11,52;0
+INC-20240136;06/09/2024 18:53;Belgium;Procurement;Mobile Device;Misconfiguration;Medium;;Audit;In Progress;167;295;1032;None;0;2209;Misconfiguration;Internal;Yes;C. Schmidt;2024;septembre;17,2;0
+INC-20240137;13/01/2025 22:12;Germany;Operations;Cloud Service;Unauthorized Access;High;;;Resolved;588;615;2709;Moderate;857;18038;Unpatched Vulnerability;Restricted;No;E. Bernard;2025;janvier;45,15;0
+INC-20240138;22/08/2025 12:41;France;Sales;Server;Data Exfiltration;High;;;Resolved;1487;665;2229;Minor;263;8362;Misconfiguration;Confidential;No;C. Schmidt;2025;août;37,15;0
+INC-20240139;06/02/2025 02:52;France;Facilities;Email Account;Lost/Stolen Device;High;;Audit;In Progress;352;173;;Minor;235;9775;Unpatched Vulnerability;Confidential;No;E. Bernard;2025;février;;0
+INC-20240140;22/12/2024 01:50;Belgium;Operations;Workstation;Phishing;Medium;;SIEM;In Progress;222;136;1763;Minor;147;1824;Insider Error;Internal;;S. Rossi;2024;décembre;29,38;0
+INC-20240141;08/06/2025 23:46;Germany;Facilities;Cloud Service;Phishing;Medium;;Threat Intel;Resolved;352;254;231;Major;173;1594;Social Engineering;Internal;Yes;M. Dupont;2025;juin;3,85;0
+INC-20240142;26/05/2024 06:22;Germany;HR;Workstation;Unauthorized Access;Medium;;Threat Intel;Eradicated;427;825;;Moderate;547;4933;;Internal;No;E. Bernard;2024;mai;;0
+INC-20240143;05/08/2024 12:11;France;Facilities;Application;Misconfiguration;Low;;User Report;Resolved;86;27;899;Minor;66;440;Misconfiguration;Internal;No;C. Schmidt;2024;août;14,98;0
+INC-20240144;25/10/2024 00:30;France;Sales;Cloud Service;Phishing;Medium;;User Report;Resolved;221;178;594;Minor;48;1133;Insider Error;Confidential;No;C. Schmidt;2024;octobre;9,9;0
+INC-20240145;08/09/2024 17:23;France;Operations;Workstation;Phishing;Medium;;IDS/IPS;Eradicated;213;123;422;Minor;49;1809;Misconfiguration;Confidential;No;E. Bernard;2024;septembre;7,03;0
+INC-20240146;21/04/2025 08:36;Luxembourg;Finance;Application;Unauthorized Access;High;;IDS/IPS;Contained;701;;3880;Minor;364;21481;;Internal;No;E. Bernard;2025;avril;64,67;0
+INC-20240147;29/04/2025 22:22;Belgium;Operations;Network Device;Data Exfiltration;High;;EDR;Contained;1506;1076;2227;Major;1451;24138;Insider Error;Restricted;No;J. Becker;2025;avril;37,12;0
+INC-20240148;27/12/2024 21:41;Luxembourg;Procurement;Application;DDoS;High;;Email Gateway;Resolved;548;896;4817;Moderate;1035;10833;Weak Password;Restricted;Yes;L. Müller;2024;décembre;80,28;0
+INC-20240149;02/10/2025 16:05;Luxembourg;Operations;Application;Unauthorized Access;Medium;;SIEM;Resolved;448;143;735;Minor;;2519;Misconfiguration;;No;N. Laurent;2025;octobre;12,25;0
+INC-20240150;27/02/2025 00:47;Germany;Sales;Workstation;Malware;Low;;Audit;Eradicated;145;53;191;Minor;21;840;Weak Password;Public;No;M. Dupont;2025;février;3,18;0
+INC-20240151;14/08/2025 01:09;France;R&D;Network Device;Unauthorized Access;Low;;Threat Intel;Contained;189;194;228;Moderate;59;1170;Insider Error;Restricted;No;N. Laurent;2025;août;3,8;0
+INC-20240152;09/05/2025 13:40;Luxembourg;Procurement;Network Device;Malware;High;;Audit;Resolved;614;423;679;Minor;64;22079;Weak Password;Internal;No;S. Rossi;2025;mai;11,32;0
+INC-20240153;11/05/2024 10:51;Germany;Procurement;Database;Data Exfiltration;Medium;;Email Gateway;Eradicated;311;486;754;None;0;3315;Unpatched Vulnerability;Internal;No;E. Bernard;2024;mai;12,57;0
+INC-20240154;20/05/2024 15:15;Luxembourg;Operations;Cloud Service;Phishing;High;;SIEM;Contained;319;222;4828;Moderate;1493;10093;Weak Password;Internal;No;A. Weber;2024;mai;80,47;0
+INC-20240155;26/11/2024 02:03;Belgium;Procurement;Email Account;Phishing;Low;;User Report;Resolved;117;51;155;Minor;18;353;Insider Error;Internal;No;C. Schmidt;2024;novembre;2,58;0
+INC-20240156;03/10/2025 08:02;Germany;Sales;Email Account;Phishing;High;;SIEM;Resolved;912;617;2552;Major;1462;3997;Third-Party Supplier;Confidential;No;N. Laurent;2025;octobre;42,53;0
+INC-20240157;13/05/2025 19:05;France;R&D;Database;Unauthorized Access;Low;;User Report;Eradicated;190;35;149;Minor;11;1096;Unpatched Vulnerability;Confidential;;L. Müller;2025;mai;2,48;0
+INC-20240158;16/06/2024 20:28;Germany;R&D;Network Device;Malware;High;;EDR;Eradicated;840;472;2306;Moderate;555;10584;Unpatched Vulnerability;Internal;Yes;J. Becker;2024;juin;38,43;0
+INC-20240159;30/10/2024 01:52;France;R&D;Workstation;Misconfiguration;Low;;Threat Intel;Contained;134;38;;Moderate;104;481;Lost/Stolen;Confidential;No;L. Müller;2024;octobre;;0
+INC-20240160;03/05/2024 07:42;Belgium;Finance;Application;Malware;High;;User Report;Resolved;242;409;2596;Minor;275;18051;Insider Error;Internal;No;C. Schmidt;2024;mai;43,27;0
+INC-20240161;20/04/2025 11:13;France;Legal;Application;DDoS;Medium;;EDR;Contained;137;113;593;Minor;47;4129;Insider Error;Internal;;L. Müller;2025;avril;9,88;0
+INC-20240162;30/11/2024 05:18;Luxembourg;Sales;Database;Malware;Medium;;IDS/IPS;Contained;242;197;457;Minor;38;2464;Social Engineering;Internal;;L. Müller;2024;novembre;7,62;0
+INC-20240163;06/01/2025 17:47;Germany;Facilities;Network Device;Ransomware;Critical;;Audit;Resolved;1617;1190;5211;Moderate;1625;237982;Unpatched Vulnerability;Public;No;S. Rossi;2025;janvier;86,85;1
+INC-20240164;17/06/2024 19:04;Luxembourg;Finance;Workstation;Misconfiguration;Medium;;Threat Intel;Contained;380;239;836;Moderate;285;1071;Unpatched Vulnerability;Confidential;;S. Rossi;2024;juin;13,93;0
+INC-20240165;25/08/2025 17:45;Luxembourg;IT;Database;Phishing;Medium;;SIEM;Contained;;172;3010;Minor;271;2684;Insider Error;Internal;No;A. Weber;2025;août;50,17;0
+INC-20240166;18/10/2024 03:53;Luxembourg;Procurement;Network Device;Ransomware;Critical;;User Report;Contained;1732;1768;20833;Minor;2318;235666;Third-Party Supplier;Internal;No;N. Laurent;2024;octobre;347,22;1
+INC-20240167;23/12/2024 08:13;France;Finance;Workstation;Phishing;High;;SIEM;In Progress;573;244;1894;Minor;163;10930;Misconfiguration;Internal;;A. Weber;2024;décembre;31,57;0
+INC-20240168;23/03/2025 20:36;Luxembourg;Procurement;Workstation;Data Exfiltration;Medium;;User Report;Eradicated;920;325;1613;Moderate;605;2625;Lost/Stolen;Confidential;No;E. Bernard;2025;mars;26,88;0
+INC-20240169;21/05/2024 06:31;France;IT;Cloud Service;Phishing;Low;;Email Gateway;Contained;188;132;432;Major;317;505;Lost/Stolen;Confidential;No;M. Dupont;2024;mai;7,2;0
+INC-20240170;21/05/2025 19:40;France;R&D;Network Device;Malware;Medium;;Threat Intel;Resolved;140;238;1377;Minor;153;4285;Insider Error;Public;No;C. Schmidt;2025;mai;22,95;0
+INC-20240171;01/04/2025 22:02;Germany;Legal;Workstation;Phishing;Low;;Audit;Eradicated;136;30;363;Moderate;88;401;Misconfiguration;Internal;No;N. Laurent;2025;avril;6,05;0
+INC-20240172;14/07/2024 22:31;France;Operations;Server;Malware;High;;SIEM;Eradicated;678;272;3521;Moderate;1325;26550;Misconfiguration;;No;N. Laurent;2024;juillet;58,68;0
+INC-20240173;27/02/2025 16:11;France;Sales;Server;Malware;Low;;User Report;Contained;94;67;195;None;0;816;Misconfiguration;Internal;No;N. Laurent;2025;février;3,25;0
+INC-20240174;16/03/2025 14:01;Luxembourg;Sales;Database;Phishing;Low;;EDR;Resolved;109;56;163;Minor;13;147;Insider Error;Restricted;No;L. Müller;2025;mars;2,72;0
+INC-20240175;07/09/2024 09:47;France;Sales;Application;Unauthorized Access;Medium;;User Report;Contained;367;198;2141;Minor;;2940;Misconfiguration;Internal;No;M. Dupont;2024;septembre;35,68;0
+INC-20240176;07/09/2025 21:37;Belgium;Facilities;Server;Malware;Critical;;User Report;Eradicated;654;1929;;Moderate;1126;135335;Misconfiguration;Internal;No;C. Schmidt;2025;septembre;;1
+INC-20240177;04/09/2024 10:56;France;Operations;Application;Malware;Medium;;IDS/IPS;Contained;347;365;983;Moderate;372;4177;Misconfiguration;Restricted;No;J. Becker;2024;septembre;16,38;0
+INC-20240178;30/01/2025 14:18;France;Finance;Cloud Service;Lost/Stolen Device;High;;Email Gateway;Resolved;808;305;3689;Minor;364;14551;Unpatched Vulnerability;Confidential;No;J. Becker;2025;janvier;61,48;0
+INC-20240179;27/06/2024 14:53;Germany;HR;Email Account;Lost/Stolen Device;Low;;User Report;Eradicated;143;177;885;Moderate;223;181;Unpatched Vulnerability;Confidential;No;M. Dupont;2024;juin;14,75;0
+INC-20240180;18/09/2025 15:13;Luxembourg;Legal;Server;Malware;Medium;;SIEM;Resolved;194;91;414;Minor;36;1863;Insider Error;Confidential;;A. Weber;2025;septembre;6,9;0
+INC-20240181;23/03/2025 15:40;Luxembourg;IT;Server;Unauthorized Access;High;;IDS/IPS;Eradicated;861;736;6644;Moderate;1656;35806;Insider Error;Internal;No;L. Müller;2025;mars;110,73;0
+INC-20240182;12/09/2025 05:29;France;IT;Application;Malware;Medium;;SIEM;Eradicated;209;382;;Moderate;312;2840;Weak Password;Public;No;S. Rossi;2025;septembre;;0
+INC-20240183;03/10/2025 17:34;France;Facilities;Server;Malware;Medium;;EDR;Resolved;199;283;1034;Moderate;330;3025;Misconfiguration;Internal;No;M. Dupont;2025;octobre;17,23;0
+INC-20240184;03/10/2024 08:52;Belgium;Procurement;Network Device;Phishing;Low;;IDS/IPS;Resolved;105;;125;None;0;184;Misconfiguration;Internal;No;S. Rossi;2024;octobre;2,08;0
+INC-20240185;06/11/2024 16:22;Germany;R&D;Workstation;Phishing;Medium;;Audit;Eradicated;167;293;1519;Minor;169;1051;Social Engineering;Confidential;No;M. Dupont;2024;novembre;25,32;0
+INC-20240186;27/04/2025 11:52;Belgium;Facilities;Server;Unauthorized Access;High;;IDS/IPS;Resolved;534;382;2947;Minor;245;20640;Misconfiguration;Internal;No;N. Laurent;2025;avril;49,12;0
+INC-20240187;30/07/2025 22:28;Belgium;Sales;Server;Unauthorized Access;High;;;Contained;1247;1237;1395;Minor;172;31395;Weak Password;Internal;Yes;C. Schmidt;2025;juillet;23,25;0
+INC-20240188;06/09/2024 20:55;Germany;R&D;Network Device;Data Exfiltration;High;;EDR;Resolved;822;830;;Minor;384;26611;Insider Error;Restricted;No;S. Rossi;2024;septembre;;0
+INC-20240189;06/03/2025 16:25;Luxembourg;Legal;Workstation;Unauthorized Access;High;;EDR;Contained;500;270;704;None;0;19094;Lost/Stolen;;No;J. Becker;2025;mars;11,73;0
+INC-20240190;16/07/2025 17:47;Belgium;Finance;Workstation;Malware;Medium;;Threat Intel;Resolved;232;180;1070;Moderate;388;2972;Social Engineering;Public;Yes;E. Bernard;2025;juillet;17,83;0
+INC-20240191;07/09/2025 20:00;Luxembourg;Finance;Email Account;Phishing;Medium;;Threat Intel;False Positive;;161;628;Moderate;208;2131;Social Engineering;;;J. Becker;2025;septembre;10,47;0
+INC-20240192;27/12/2024 10:50;Luxembourg;Facilities;Email Account;Unauthorized Access;Critical;;;Resolved;1224;1079;2600;None;0;168957;Weak Password;Internal;No;L. Müller;2024;décembre;43,33;1
+INC-20240193;30/06/2025 06:02;Belgium;Operations;Cloud Service;Phishing;Medium;;Threat Intel;Contained;389;271;1597;Moderate;;2698;Social Engineering;Internal;No;S. Rossi;2025;juin;26,62;0
+INC-20240194;16/01/2025 18:43;Luxembourg;HR;Database;Malware;High;;SIEM;Resolved;766;331;1572;Minor;141;19344;;Confidential;No;S. Rossi;2025;janvier;26,2;0
+INC-20240195;25/05/2025 17:49;Belgium;Sales;Database;Phishing;Medium;;EDR;In Progress;325;172;857;Moderate;180;1399;;Confidential;No;N. Laurent;2025;mai;14,28;0
+INC-20240196;;Germany;Legal;Workstation;Ransomware;High;;Threat Intel;Resolved;3601;1782;6663;Major;4313;29187;Insider Error;Public;No;C. Schmidt;;;111,05;0
+INC-20240197;01/07/2025 07:42;Germany;Sales;Mobile Device;Misconfiguration;Medium;;;Eradicated;248;424;478;Minor;55;1782;Third-Party Supplier;;No;J. Becker;2025;juillet;7,97;0
+INC-20240198;04/06/2024 03:37;Germany;IT;Server;DDoS;High;;Threat Intel;Contained;817;535;;Moderate;859;26698;Misconfiguration;Public;;L. Müller;2024;juin;;0
+INC-20240199;21/02/2025 05:47;France;Finance;Mobile Device;Lost/Stolen Device;Critical;;IDS/IPS;Contained;861;1134;7843;Moderate;1742;112349;Insider Error;Restricted;Yes;N. Laurent;2025;février;130,72;1
+INC-20240200;01/07/2025 23:51;Luxembourg;Finance;Workstation;Unauthorized Access;High;;User Report;In Progress;579;1190;1050;Moderate;;29368;Unpatched Vulnerability;Internal;No;J. Becker;2025;juillet;17,5;0
+INC-20240201;24/06/2025 04:48;Germany;Finance;Cloud Service;Phishing;Medium;;EDR;Contained;224;254;2155;Moderate;717;1909;Lost/Stolen;;No;E. Bernard;2025;juin;35,92;0
+INC-20240202;01/09/2024 23:21;Belgium;Finance;Workstation;Phishing;Medium;;Email Gateway;Resolved;273;102;225;Moderate;53;2688;Misconfiguration;Internal;Yes;S. Rossi;2024;septembre;3,75;0
+INC-20240203;26/11/2024 03:09;Luxembourg;HR;Server;Misconfiguration;Medium;;Email Gateway;Resolved;127;205;666;Minor;72;1180;Social Engineering;Restricted;No;S. Rossi;2024;novembre;11,1;0
+INC-20240204;03/02/2025 00:58;France;Operations;Cloud Service;Phishing;Medium;;Audit;Eradicated;172;224;610;Minor;58;2287;Insider Error;Public;No;L. Müller;2025;février;10,17;0
+INC-20240205;29/06/2024 19:14;Luxembourg;Legal;Mobile Device;Ransomware;High;;User Report;Eradicated;651;636;3502;Minor;433;20029;Lost/Stolen;Internal;No;S. Rossi;2024;juin;58,37;0
+INC-20240206;05/05/2024 21:23;Luxembourg;IT;Email Account;DDoS;Critical;;User Report;Contained;1238;600;10683;Moderate;3905;147354;Weak Password;Restricted;No;E. Bernard;2024;mai;178,05;1
+INC-20240207;03/06/2025 03:00;Belgium;Sales;Server;Unauthorized Access;High;;IDS/IPS;Contained;770;633;2837;Minor;328;23166;;Restricted;Yes;C. Schmidt;2025;juin;47,28;0
+INC-20240208;24/06/2024 11:17;Germany;Operations;Workstation;Malware;Medium;;User Report;Contained;;258;;Moderate;506;2951;Misconfiguration;Public;No;A. Weber;2024;juin;;0
+INC-20240209;18/08/2024 00:27;Belgium;IT;Network Device;Malware;High;;EDR;Resolved;476;1151;1827;Moderate;404;16619;Third-Party Supplier;Internal;No;E. Bernard;2024;août;30,45;0
+INC-20240210;18/01/2025 04:17;Luxembourg;Legal;Database;Phishing;Low;;IDS/IPS;False Positive;79;106;189;Moderate;50;336;Social Engineering;Confidential;No;M. Dupont;2025;janvier;3,15;0
+INC-20240211;05/10/2024 13:23;Belgium;Sales;Server;Ransomware;High;;Email Gateway;Resolved;801;214;1113;None;0;44404;Weak Password;Internal;No;A. Weber;2024;octobre;18,55;0
+INC-20240212;25/04/2025 13:56;Belgium;HR;Workstation;Misconfiguration;Low;;Email Gateway;Resolved;104;23;149;None;0;553;Insider Error;Confidential;No;C. Schmidt;2025;avril;2,48;0
+INC-20240213;06/07/2024 20:48;France;Finance;Workstation;Phishing;High;;User Report;Eradicated;431;181;;Minor;330;3434;Third-Party Supplier;Restricted;No;M. Dupont;2024;juillet;;0
+INC-20240214;02/03/2025 11:54;Luxembourg;Procurement;Application;Misconfiguration;High;;SIEM;Eradicated;709;415;439;Moderate;;6793;Social Engineering;Internal;;L. Müller;2025;mars;7,32;0
+INC-20240215;04/11/2024 19:53;Belgium;HR;Workstation;Malware;Medium;;EDR;Contained;160;156;2117;Minor;249;1771;Third-Party Supplier;Internal;;A. Weber;2024;novembre;35,28;0
+INC-20240216;26/02/2025 03:47;Belgium;Procurement;Cloud Service;Lost/Stolen Device;Low;;EDR;In Progress;;172;597;Moderate;128;765;Weak Password;Restricted;;E. Bernard;2025;février;9,95;0
+INC-20240217;02/10/2025 15:02;France;Facilities;Server;Phishing;High;;Email Gateway;Contained;575;304;2561;Moderate;866;14627;Unpatched Vulnerability;Confidential;No;A. Weber;2025;octobre;42,68;0
+INC-20240218;10/01/2025 11:28;Germany;Legal;Mobile Device;Malware;Critical;;EDR;Eradicated;842;1216;2088;Minor;156;166143;Weak Password;Restricted;Yes;M. Dupont;2025;janvier;34,8;1
+INC-20240219;08/06/2025 04:23;France;Operations;Application;Phishing;Low;;IDS/IPS;In Progress;182;59;750;Minor;76;493;Lost/Stolen;Public;Yes;E. Bernard;2025;juin;12,5;0
+INC-20240220;;Luxembourg;Operations;Mobile Device;Misconfiguration;Medium;;EDR;False Positive;116;83;344;None;0;1051;Insider Error;;No;S. Rossi;;;5,73;0
+INC-20240221;29/12/2024 03:26;Germany;Finance;Network Device;Phishing;Low;;SIEM;Contained;133;40;212;Minor;21;483;Lost/Stolen;Confidential;Yes;L. Müller;2024;décembre;3,53;0
+INC-20240222;13/07/2024 21:12;France;Finance;Workstation;Misconfiguration;Medium;;SIEM;Contained;588;190;804;Moderate;197;2124;Insider Error;Internal;Yes;C. Schmidt;2024;juillet;13,4;0
+INC-20240223;05/07/2025 14:22;Germany;IT;Database;Phishing;High;;Audit;In Progress;311;112;1317;None;0;8646;Social Engineering;Internal;Yes;E. Bernard;2025;juillet;21,95;0
+INC-20240224;25/12/2024 23:34;France;Facilities;Database;Malware;Low;;Email Gateway;In Progress;202;42;129;Moderate;50;154;Weak Password;Internal;Yes;L. Müller;2024;décembre;2,15;0
+INC-20240225;07/05/2024 13:55;France;Facilities;Application;Unauthorized Access;High;;IDS/IPS;Resolved;735;850;5537;Minor;549;30338;Third-Party Supplier;Internal;No;A. Weber;2024;mai;92,28;0
+INC-20240226;30/01/2025 02:07;Germany;Procurement;Mobile Device;Malware;Medium;;Threat Intel;Resolved;259;214;;Moderate;413;3368;;Restricted;Yes;L. Müller;2025;janvier;;0
+INC-20240227;14/06/2024 07:59;Germany;Legal;Network Device;Phishing;Medium;;;Eradicated;701;;801;Major;542;3127;Social Engineering;Confidential;No;A. Weber;2024;juin;13,35;0
+INC-20240228;10/09/2024 20:30;Belgium;Facilities;Email Account;Data Exfiltration;High;;User Report;In Progress;1124;546;1924;Minor;;14130;Weak Password;Public;No;A. Weber;2024;septembre;32,07;0
+INC-20240229;11/10/2024 04:45;France;HR;Mobile Device;Ransomware;Medium;;SIEM;Contained;1069;1455;4489;Major;2605;7712;;Confidential;Yes;M. Dupont;2024;octobre;74,82;0
+INC-20240230;05/05/2025 14:24;Luxembourg;Legal;Email Account;Misconfiguration;High;;IDS/IPS;Contained;595;920;730;Major;349;7430;Unpatched Vulnerability;Confidential;No;J. Becker;2025;mai;12,17;0
+INC-20240231;18/04/2025 08:07;Belgium;R&D;Email Account;Unauthorized Access;Medium;;Audit;Resolved;360;810;1370;Major;1053;3982;Unpatched Vulnerability;Internal;Yes;N. Laurent;2025;avril;22,83;0
+INC-20240232;21/10/2024 21:55;France;Operations;Server;Misconfiguration;Medium;;EDR;Contained;220;149;266;Minor;23;2422;Insider Error;Public;No;C. Schmidt;2024;octobre;4,43;0
+INC-20240233;27/03/2025 16:15;Luxembourg;Sales;Cloud Service;Phishing;High;;User Report;Resolved;185;209;2551;None;0;5345;;;Yes;A. Weber;2025;mars;42,52;0
+INC-20240234;05/10/2024 15:04;Germany;R&D;Mobile Device;Phishing;Low;;Email Gateway;Eradicated;151;45;750;Minor;90;535;Lost/Stolen;Internal;No;L. Müller;2024;octobre;12,5;0
+INC-20240235;13/02/2025 00:43;France;Sales;Server;Phishing;Low;;SIEM;Eradicated;212;79;240;Moderate;62;112;Misconfiguration;Internal;Yes;M. Dupont;2025;février;4;0
+INC-20240236;19/05/2024 15:42;Belgium;R&D;Network Device;Malware;Critical;;SIEM;Contained;865;1346;3862;Moderate;838;46656;Unpatched Vulnerability;Restricted;No;E. Bernard;2024;mai;64,37;1
+INC-20240237;25/05/2025 20:49;Germany;HR;Workstation;Unauthorized Access;Medium;;;Contained;360;193;845;None;0;2039;Weak Password;Internal;No;J. Becker;2025;mai;14,08;0
+INC-20240238;10/02/2025 02:58;Germany;Finance;Email Account;Phishing;Low;;Threat Intel;Eradicated;48;85;265;Minor;25;369;Misconfiguration;Confidential;No;N. Laurent;2025;février;4,42;0
+INC-20240239;18/07/2025 01:37;France;Facilities;Application;Phishing;High;;IDS/IPS;Eradicated;996;302;2519;Minor;;12063;Social Engineering;Internal;Yes;M. Dupont;2025;juillet;41,98;0
+INC-20240240;06/12/2024 20:09;Luxembourg;R&D;Database;Phishing;Low;;Email Gateway;Resolved;71;39;681;Minor;83;180;Misconfiguration;Internal;Yes;E. Bernard;2024;décembre;11,35;0
+INC-20240241;14/09/2025 20:47;Belgium;Finance;Application;Phishing;High;;User Report;Resolved;795;;1843;Moderate;551;11720;Unpatched Vulnerability;Restricted;No;S. Rossi;2025;septembre;30,72;0
+INC-20240242;10/11/2024 22:50;Belgium;Sales;Mobile Device;Phishing;Low;;Audit;Resolved;162;77;527;Moderate;113;608;Weak Password;Public;No;C. Schmidt;2024;novembre;8,78;0
+INC-20240243;30/04/2024 22:41;Germany;Finance;Database;Misconfiguration;Medium;;User Report;Contained;537;469;1521;Major;854;2191;Third-Party Supplier;Internal;No;M. Dupont;2024;avril;25,35;0
+INC-20240244;04/02/2025 19:30;France;R&D;Email Account;Lost/Stolen Device;Medium;;EDR;Resolved;133;184;402;None;0;954;Third-Party Supplier;Confidential;Yes;E. Bernard;2025;février;6,7;0
+INC-20240245;03/06/2025 01:24;Germany;Legal;Cloud Service;Malware;Medium;;SIEM;Resolved;304;275;1135;Moderate;354;3930;;Confidential;Yes;E. Bernard;2025;juin;18,92;0
+INC-20240246;27/07/2024 08:17;Belgium;Sales;Application;Malware;High;;Threat Intel;Resolved;738;414;3338;Moderate;897;19198;Social Engineering;Confidential;No;M. Dupont;2024;juillet;55,63;0
+INC-20240247;27/08/2025 18:48;France;IT;Network Device;Phishing;Low;;SIEM;Eradicated;178;99;234;Moderate;83;148;Third-Party Supplier;Internal;No;A. Weber;2025;août;3,9;0
+INC-20240248;16/06/2024 09:05;Luxembourg;Facilities;Workstation;Phishing;High;;IDS/IPS;Resolved;748;297;1308;Minor;117;7983;Social Engineering;Internal;No;N. Laurent;2024;juin;21,8;0
+INC-20240249;04/05/2025 17:47;Germany;HR;Application;Unauthorized Access;Medium;;Email Gateway;Resolved;508;132;;None;0;3191;Social Engineering;Internal;No;M. Dupont;2025;mai;;0
+INC-20240250;23/11/2024 08:03;Belgium;Operations;Email Account;Malware;Medium;;Audit;In Progress;101;409;1319;Minor;141;2778;;Confidential;No;A. Weber;2024;novembre;21,98;0
+INC-20240251;26/04/2024 08:08;France;Sales;Email Account;Malware;Low;;;Resolved;177;51;53;Minor;3;406;Lost/Stolen;Internal;No;J. Becker;2024;avril;0,88;0
+INC-20240252;31/07/2024 00:16;France;Procurement;Email Account;Malware;Medium;;IDS/IPS;Resolved;780;116;348;Moderate;109;3041;Misconfiguration;Public;No;C. Schmidt;2024;juillet;5,8;0
+INC-20240253;17/02/2025 06:51;Belgium;Procurement;Cloud Service;Misconfiguration;Low;;SIEM;Resolved;217;82;356;Moderate;135;79;Lost/Stolen;Confidential;No;C. Schmidt;2025;février;5,93;0
+INC-20240254;;Germany;R&D;Database;Data Exfiltration;Critical;;Audit;Contained;2633;2735;8864;Moderate;2249;344232;Insider Error;;No;C. Schmidt;;;147,73;1
+INC-20240255;18/08/2025 13:03;France;HR;Network Device;Data Exfiltration;Medium;;IDS/IPS;Contained;355;312;521;Minor;;3582;Unpatched Vulnerability;Confidential;No;S. Rossi;2025;août;8,68;0
+INC-20240256;01/12/2024 12:56;Belgium;Sales;Database;Lost/Stolen Device;High;;Threat Intel;Resolved;659;;4747;Moderate;1262;15502;Social Engineering;Internal;No;M. Dupont;2024;décembre;79,12;0
+INC-20240257;29/06/2024 17:11;Belgium;Procurement;Server;Malware;High;;Threat Intel;Resolved;323;576;798;Minor;64;17991;Third-Party Supplier;Internal;Yes;S. Rossi;2024;juin;13,3;0
+INC-20240258;30/07/2025 05:12;France;HR;Server;Phishing;Low;;EDR;Eradicated;;56;97;Minor;10;139;Unpatched Vulnerability;Internal;Yes;J. Becker;2025;juillet;1,62;0
+INC-20240259;;Luxembourg;HR;Database;Phishing;Medium;;Audit;In Progress;114;201;640;Minor;75;2063;Misconfiguration;Restricted;No;A. Weber;;;10,67;0
+INC-20240260;13/03/2025 19:20;Belgium;IT;Workstation;Unauthorized Access;High;;Audit;Resolved;1508;965;2804;Major;2138;26462;;Confidential;No;S. Rossi;2025;mars;46,73;0
+INC-20240261;23/06/2024 01:39;France;Sales;Application;Phishing;Medium;;Audit;False Positive;220;165;;Minor;45;1699;Third-Party Supplier;Internal;No;S. Rossi;2024;juin;;0
+INC-20240262;27/10/2024 06:00;Germany;IT;Cloud Service;Malware;Critical;;User Report;Resolved;552;386;1900;Minor;221;68347;Unpatched Vulnerability;Internal;Yes;S. Rossi;2024;octobre;31,67;1
+INC-20240263;07/05/2025 23:18;France;Procurement;Workstation;Phishing;Medium;;Email Gateway;Resolved;249;393;562;Moderate;181;1829;Insider Error;;No;A. Weber;2025;mai;9,37;0
+INC-20240264;01/01/2025 17:16;Belgium;Operations;Workstation;Data Exfiltration;High;;IDS/IPS;In Progress;1073;397;3468;Minor;396;37019;Weak Password;Confidential;No;S. Rossi;2025;janvier;57,8;0
+INC-20240265;16/08/2024 10:17;Luxembourg;Finance;Application;Malware;High;;;Resolved;445;337;1478;Minor;157;15536;Lost/Stolen;Internal;No;L. Müller;2024;août;24,63;0
+INC-20240266;08/09/2025 07:33;Germany;Legal;Cloud Service;Malware;Medium;;SIEM;Contained;226;136;316;Minor;33;2877;Weak Password;Restricted;No;J. Becker;2025;septembre;5,27;0
+INC-20240267;30/07/2024 09:19;Belgium;Facilities;Email Account;Phishing;Low;;IDS/IPS;In Progress;78;122;591;Minor;65;639;Weak Password;Confidential;No;E. Bernard;2024;juillet;9,85;0
+INC-20240268;14/08/2024 03:27;Luxembourg;IT;Network Device;Malware;High;;Audit;Resolved;384;478;3825;Minor;330;6533;Social Engineering;Internal;No;E. Bernard;2024;août;63,75;0
+INC-20240269;22/10/2024 04:08;Germany;R&D;Application;Misconfiguration;Low;;IDS/IPS;Resolved;98;37;169;Moderate;;325;Insider Error;Confidential;No;S. Rossi;2024;octobre;2,82;0
+INC-20240270;28/09/2024 03:46;Germany;Facilities;Application;Phishing;Medium;;User Report;Resolved;105;145;;None;0;2306;Lost/Stolen;Internal;Yes;S. Rossi;2024;septembre;;0
+INC-20240271;13/07/2025 01:40;Luxembourg;Sales;Mobile Device;Ransomware;High;;;Resolved;702;1410;9775;Moderate;3801;50337;Insider Error;Internal;No;L. Müller;2025;juillet;162,92;0
+INC-20240272;05/10/2025 22:30;Luxembourg;R&D;Cloud Service;Lost/Stolen Device;Medium;;EDR;Eradicated;162;456;1018;Minor;99;1002;Insider Error;Confidential;Yes;A. Weber;2025;octobre;16,97;0
+INC-20240273;11/08/2025 18:03;Belgium;Finance;Application;Phishing;High;;IDS/IPS;Eradicated;;336;1790;Minor;146;10205;Social Engineering;Public;Yes;N. Laurent;2025;août;29,83;0
+INC-20240274;20/07/2025 03:12;Germany;Facilities;Mobile Device;Malware;Medium;;SIEM;Resolved;166;170;418;Minor;48;2305;Insider Error;Confidential;Yes;N. Laurent;2025;juillet;6,97;0
+INC-20240275;23/02/2025 18:30;Belgium;Facilities;Mobile Device;Phishing;Medium;;IDS/IPS;Resolved;434;285;;Moderate;169;3064;Lost/Stolen;Internal;No;J. Becker;2025;février;;0
+INC-20240276;26/07/2024 23:59;Belgium;IT;Mobile Device;Data Exfiltration;High;;IDS/IPS;Resolved;845;1320;3135;Minor;317;28840;Lost/Stolen;Internal;No;M. Dupont;2024;juillet;52,25;0
+INC-20240277;11/06/2025 03:53;France;Operations;Cloud Service;Phishing;Low;;;Resolved;93;37;187;None;0;476;Misconfiguration;Internal;No;L. Müller;2025;juin;3,12;0
+INC-20240278;22/08/2024 16:24;Germany;Procurement;Network Device;Data Exfiltration;Medium;;EDR;Contained;451;243;647;Minor;48;7632;Insider Error;;No;J. Becker;2024;août;10,78;0
+INC-20240279;12/10/2024 04:40;Luxembourg;R&D;Mobile Device;Lost/Stolen Device;High;;Email Gateway;Resolved;455;918;1470;Major;935;13396;Misconfiguration;Restricted;No;L. Müller;2024;octobre;24,5;0
+INC-20240280;25/07/2025 04:51;Belgium;R&D;Email Account;Phishing;High;;Threat Intel;Resolved;328;581;3858;Major;2998;18324;Lost/Stolen;;No;L. Müller;2025;juillet;64,3;0
+INC-20240281;06/04/2025 04:49;Belgium;Procurement;Mobile Device;Phishing;Medium;;Audit;Contained;223;154;1124;Minor;137;2740;Social Engineering;Internal;No;N. Laurent;2025;avril;18,73;0
+INC-20240282;24/06/2025 00:27;Luxembourg;IT;Database;Data Exfiltration;Critical;;User Report;Contained;1282;1031;10445;Minor;781;156081;Weak Password;Internal;No;S. Rossi;2025;juin;174,08;1
+INC-20240283;20/06/2024 10:44;Belgium;Procurement;Workstation;Lost/Stolen Device;Medium;;IDS/IPS;Resolved;261;101;644;None;0;3431;Weak Password;Confidential;No;L. Müller;2024;juin;10,73;0
+INC-20240284;06/02/2025 01:42;Germany;R&D;Database;DDoS;Medium;;Threat Intel;Resolved;286;213;1411;Minor;150;4284;Social Engineering;Restricted;Yes;E. Bernard;2025;février;23,52;0
+INC-20240285;15/07/2025 08:12;France;Procurement;Cloud Service;Phishing;High;;Threat Intel;Resolved;563;218;889;Moderate;245;4172;;Internal;Yes;M. Dupont;2025;juillet;14,82;0
+INC-20240286;09/05/2025 01:28;Germany;Sales;Email Account;Phishing;Low;;User Report;Contained;95;55;296;Minor;37;323;Lost/Stolen;Internal;No;S. Rossi;2025;mai;4,93;0
+INC-20240287;20/02/2025 17:51;France;Finance;Mobile Device;Phishing;High;;Email Gateway;Eradicated;443;120;737;Minor;79;6012;Unpatched Vulnerability;Internal;No;S. Rossi;2025;février;12,28;0
+INC-20240288;30/11/2024 07:46;France;Legal;Mobile Device;Malware;Medium;;IDS/IPS;Eradicated;181;309;;None;0;1195;Lost/Stolen;Confidential;No;A. Weber;2024;novembre;;0
+INC-20240289;23/12/2024 01:27;France;R&D;Server;Phishing;Low;;EDR;Eradicated;99;113;236;Minor;30;214;Insider Error;;No;C. Schmidt;2024;décembre;3,93;0
+INC-20240290;;Belgium;Legal;Server;Ransomware;High;;SIEM;Contained;1048;662;3002;Minor;334;12908;Lost/Stolen;Internal;Yes;M. Dupont;;;50,03;0
+INC-20240291;26/06/2025 03:47;Belgium;Procurement;Database;Phishing;Medium;;Audit;Resolved;230;162;842;Minor;74;2253;Weak Password;Confidential;Yes;J. Becker;2025;juin;14,03;0
+INC-20240292;17/10/2024 09:10;Luxembourg;Operations;Email Account;Data Exfiltration;Low;;EDR;Eradicated;309;26;672;None;0;1441;Insider Error;Internal;No;N. Laurent;2024;octobre;11,2;0
+INC-20240293;21/06/2024 21:19;Luxembourg;Finance;Mobile Device;Data Exfiltration;High;;Email Gateway;Contained;722;836;1855;Moderate;665;33568;Lost/Stolen;Confidential;No;E. Bernard;2024;juin;30,92;0
+INC-20240294;19/05/2024 17:15;Belgium;Procurement;Cloud Service;DDoS;Medium;;;Resolved;140;161;182;Minor;12;2123;Lost/Stolen;Confidential;No;S. Rossi;2024;mai;3,03;0
+INC-20240295;05/05/2025 00:24;Belgium;Finance;Workstation;Malware;High;;SIEM;Resolved;694;788;1067;Major;452;9857;Misconfiguration;Internal;No;E. Bernard;2025;mai;17,78;0
+INC-20240296;20/11/2024 15:01;Belgium;HR;Network Device;Phishing;Medium;;;Resolved;302;208;;Moderate;273;2098;Social Engineering;;Yes;A. Weber;2024;novembre;;0
+INC-20240297;03/08/2025 23:28;Luxembourg;Sales;Server;Misconfiguration;High;;IDS/IPS;Contained;1115;478;2039;Major;966;7058;Insider Error;Internal;No;C. Schmidt;2025;août;33,98;0
+INC-20240298;28/06/2024 07:02;France;Facilities;Application;Phishing;Medium;;IDS/IPS;Resolved;118;118;1447;None;0;1649;Social Engineering;Confidential;Yes;C. Schmidt;2024;juin;24,12;0
+INC-20240299;04/03/2025 08:57;Belgium;R&D;Email Account;Misconfiguration;Critical;;Threat Intel;Eradicated;1037;518;1542;Minor;171;54742;Insider Error;Confidential;No;J. Becker;2025;mars;25,7;1
+INC-20240300;08/07/2024 06:23;Luxembourg;Sales;Network Device;Malware;High;;;Contained;727;505;1074;Minor;77;22284;Insider Error;Confidential;Yes;M. Dupont;2024;juillet;17,9;0
