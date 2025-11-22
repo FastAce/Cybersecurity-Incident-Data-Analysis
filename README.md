@@ -1,178 +1,292 @@
-# Cybersecurity Incident Data Analysis – Power BI & Power Query Project
+# 🛡️ Cybersecurity Incident Data Analysis  
+_End-to-end ETL & Analytics Pipeline (Power Query + Power BI)_
 
-This repository contains a realistic, simulated dataset of cybersecurity incidents and a complete workflow to clean, analyze, and visualize the data with Power Query (ETL) and BI dashboards. The goal is to demonstrate an end-to-end Business + Data + IT skillset suitable for roles like IT Analyst, Security Analyst, or Data Analyst in IT Governance / Cyber Risk.
+This project demonstrates a complete data workflow that an **IT Analyst / Cybersecurity Analyst** would typically manage:
 
----
+- Data cleaning & standardization  
+- ETL pipeline creation using Power Query  
+- Incident normalization according to SOC/ITSM logic  
+- BI-ready dataset generation  
+- Dashboard planning & KPI design  
+- Documentation & analytics methodology  
 
-## 🎯 Objectives
-- Perform ETL with Power Query on semi-structured IT/security data.
-- Build key KPIs and interactive visuals in a BI dashboard.
-- Deliver business-ready insights and prioritized recommendations for risk reduction and IT governance.
-- Show a reproducible workflow: from raw incident logs to cleaned analytics dataset to management reporting.
+_All data is 100% synthetic and created for learning and portfolio purposes._
 
 ---
 
 ## 📁 Repository Structure
-```text
-/data
-  └── raw_cyber_incidents.csv          # Raw incident log (inconsistent formats, duplicates, missing data)
-/powerquery
-  └── PowerQuery_Cleaning_Steps.m      # Power Query M script used for data cleaning and normalization
-/dashboard
-  └── (optional) dashboard.pbix        # BI report (Power BI or equivalent)
-/dashboard/screens
-  └── (optional) *.png screenshots of main KPI views
-README.md
-.gitignore
+
+```
+Cybersecurity-Incident-Data-Analysis/
+├── data/
+│   ├── raw_cyber_incidents.csv
+│   └── clean_cyber_incidents.csv
+│
+├── powerquery/
+│   └── PowerQuery_Cleaning_Steps.m
+│
+├── dashboard/                 ← (To Do)
+│   ├── cybersecurity_dashboard.pbix
+│   └── screenshots/
+│
+└── README.md
 ```
 
-All data is fully synthetic.
+---
+
+## 🧾 Dataset Description
+
+The dataset simulates 50–300 cybersecurity incidents with fields commonly used in:
+
+- SOC monitoring  
+- Incident response workflows  
+- ITSM ticketing  
+- Internal audit / GRC processes  
+
+Typical fields include:
+
+- `Incident_ID` – Unique identifier  
+- `Date_Incident` – Datetime of detection/logging  
+- `Region` – e.g. LU, BE, FR, DE  
+- `Department_Affected` – IT, Finance, HR, Operations…  
+- `Asset_Type` – Server, Workstation, Network Device, Cloud Service…  
+- `Incident_Type` – Phishing, Malware, Ransomware, Unauthorized Access, etc.  
+- `Severity` – Low / Medium / High / Critical  
+- `Priority` – P1–P4 (inconsistent in the raw data)  
+- `Detection_Source` – SIEM, IDS/IPS, EDR, Email Gateway, User Report…  
+- `Status` – Contained, Resolved, In Progress, False Positive…  
+- `Time_to_Detect_min`, `Time_to_Contain_min`, `Time_to_Resolve_min`  
+- `Downtime_min` – Business downtime in minutes  
+- `Estimated_Cost_EUR` – Estimated financial impact  
+- `Business_Impact` – None / Minor / Moderate / Major  
+- `Root_Cause` – Misconfiguration, Vulnerability, Social Engineering, etc.  
+- `Data_Sensitivity` – Public / Internal / Confidential / Restricted  
+- `SLA_Breached` – Yes / No  
+- `Analyst` – Assigned SOC analyst  
 
 ---
 
-## 🧾 Dataset (Raw)
-**File:** `data/raw_cyber_incidents.csv`  
-**Rows:** ~300 + intentional duplicates  
-**Columns include:**
+## 🧹 Power Query ETL Pipeline
 
-| Column | Description |
-| --- | --- |
-| Incident_ID | Unique identifier for each incident |
-| Date_Incident | Timestamp of detection or registration (various formats in raw data) |
-| Region | Business region: Luxembourg, Belgium, France, Germany |
-| Department_Affected | Impacted department (IT, Finance, HR, Operations, etc.) |
-| Asset_Type | Asset category (Server, Workstation, Cloud Service, etc.) |
-| Incident_Type | Phishing, Malware, Ransomware, Unauthorized Access, etc. (may include typos in raw data) |
-| Severity | Low / Medium / High / Critical |
-| Priority | P4 - Low .. P1 - Critical (in raw data: inconsistent labels like 'p1-critical', 'high (P2)', etc.) |
-| Detection_Source | SIEM, User Report, IDS/IPS, EDR, Email Gateway, Audit, Threat Intel |
-| Status | Contained, Eradicated, In Progress, False Positive, Resolved |
-| Time_to_Detect_min | Minutes required to detect the incident (may be negative or tagged as '45 min' in raw data) |
-| Time_to_Contain_min | Minutes to contain the threat |
-| Time_to_Resolve_min | Minutes to fully resolve (MTTR baseline) |
-| Business_Impact | None / Minor / Moderate / Major |
-| Downtime_min | Minutes of business disruption |
-| Estimated_Cost_EUR | Estimated financial impact, various formats ('€ 12000', '3000 EUR', '15 500', etc.) |
-| Root_Cause | Social Engineering, Unpatched Vulnerability, Misconfiguration, etc. |
-| Data_Sensitivity | Public / Internal / Confidential / Restricted |
-| SLA_Breached | Yes / No (missing values also occur in the raw data) |
-| Analyst | Assigned analyst handling the case |
+The full ETL logic is implemented in:
 
----
+- `powerquery/PowerQuery_Cleaning_Steps.m`
 
-## 🔧 ETL with Power Query
-The file `powerquery/PowerQuery_Cleaning_Steps.m` contains the full cleaning pipeline. The key steps are:
+It transforms:
 
-1. **Standardize text fields**  
-   - Trim leading/trailing whitespace.  
-   - Normalize categories: e.g. `Phising` → `Phishing`, `Maleware` → `Malware`, etc.  
-   - Normalize Priority values to one consistent scale: `P1 - Critical`, `P2 - High`, `P3 - Medium`, `P4 - Low`.
+`data/raw_cyber_incidents.csv` ➜ `data/clean_cyber_incidents.csv`
 
-2. **Clean numeric columns**  
-   - Convert strings like `"45 min"` → `45`.  
-   - Remove invalid negative times in detection / containment / resolution / downtime.  
-   - Extract digits from cost formats like `"€ 12 000"` or `"3000 EUR"` and convert to integer (`Estimated_Cost_EUR`).
+### 🔧 Main Transformations  
+_(directly aligned with the M-script)_
 
-3. **Parse timestamps**  
-   - Convert multiple date/time formats (e.g. `2025-05-14 09:22:10`, `14/05/2025 09:22`, `14 May 2025 09:22`) into a proper `datetime` column.
-
-4. **Fill missing values**  
-   - Replace nulls in `Detection_Source`, `Data_Sensitivity`, `SLA_Breached`, etc. with `"Unknown"`.
-
-5. **Type casting**  
-   - Ensure all numeric fields are numbers, times are integers in minutes, cost is integer EUR, and `Date_Incident` is a proper datetime.
-
-6. **Deduplicate incidents**  
-   - If the same `Incident_ID` appears multiple times, keep only the most recent record by `Date_Incident` (SOC-style incident lifecycle).
-
-7. **Derived columns for analytics**  
-   - `Year` (incident year)  
-   - `Month` (month name)  
-   - `Resolve_Hours` = `Time_to_Resolve_min / 60`  
-   - `Is_Critical` = 1 if Severity = "Critical", else 0  
-
-8. **Enforce Priority from Severity**  
-   - Critical → P1 - Critical  
-   - High → P2 - High  
-   - Medium → P3 - Medium  
-   - Low → P4 - Low  
-
-After ETL, export the cleaned table as `data/cleaned_cyber_incidents.csv` and use that file for dashboarding.
+- **Trim & normalize text fields**  
+  - Remove leading/trailing whitespace from Region, Department, Asset_Type, Incident_Type, Severity, Priority, Detection_Source, Status, Business_Impact, Root_Cause, Data_Sensitivity, SLA_Breached, Analyst.
+- **Standardize incident types**  
+  - `Phising`, `Phshing` → `Phishing`  
+  - `Maleware`, `Mal-ware` → `Malware`  
+  - `Ransomeware`, `Ransom-ware` → `Ransomware`  
+  - `DDOS`, `Ddos` → `DDoS`  
+  - Other small spelling variants are normalized as well.
+- **Normalize priority levels (P1–P4)**  
+  - Map free-text formats to a clean scale:  
+    - Contains “p1” or “critical” → `P1 - Critical`  
+    - Contains “p2” or “high” → `P2 - High`  
+    - Contains “p3” or “medium” → `P3 - Medium`  
+    - Contains “p4” or “low” → `P4 - Low`
+- **Enforce consistency from Severity**  
+  - If `Severity = "Critical"` → `Priority = "P1 - Critical"`  
+  - If `Severity = "High"` → `P2 - High`  
+  - If `Severity = "Medium"` → `P3 - Medium`  
+  - Else → `P4 - Low`
+- **Convert durations to numeric values**  
+  - Remove `" min"` suffix from `Time_to_*_min` and `Downtime_min`  
+  - Convert to numeric (handling errors and invalid formats)  
+  - Replace negative values with `null`
+- **Extract numeric cost**  
+  - Keep only digits in `Estimated_Cost_EUR`  
+  - Cast to integer
+- **Parse dates**  
+  - Convert `Date_Incident` to `datetime` (with a `try ... otherwise null` pattern)
+- **Handle missing values**  
+  - Replace `null` in `Detection_Source`, `Root_Cause`, `Data_Sensitivity`, `SLA_Breached` with `"Unknown"`
+- **Sort & deduplicate**  
+  - Sort by `Incident_ID` and `Date_Incident` (descending)  
+  - Deduplicate on `Incident_ID` and keep the latest incident record
+- **Derived fields**  
+  - `Year` – Year from `Date_Incident`  
+  - `Month` – Month name from `Date_Incident`  
+  - `Resolve_Hours` – `Time_to_Resolve_min / 60` (rounded)  
+  - `Is_Critical` – 1 if `Severity = "Critical"`, else 0
 
 ---
 
-## 📈 Suggested KPIs
-These KPIs can be implemented in Power BI, Tableau, Looker Studio, etc.:
+## 📘 Data Dictionary (Key Fields)
 
-- **Total Incidents** = count of rows  
-- **% Critical Incidents** = (# where Severity = Critical) / (Total)  
-- **MTTD (Mean Time To Detect)** = average of `Time_to_Detect_min`  
-- **MTTC / MTTR** = averages of `Time_to_Contain_min` / `Time_to_Resolve_min`  
-- **Total Estimated Cost (EUR)** = sum of `Estimated_Cost_EUR`  
-- **Downtime (hours)** = sum of `Downtime_min` / 60  
-- **SLA Breach Rate** = % of incidents with `SLA_Breached = "Yes"`  
-
-Segment KPIs by:  
-- `Incident_Type`  
-- `Department_Affected`  
-- `Region`  
-- `Severity`  
-
----
-
-## 📊 Dashboard Ideas
-Recommended visuals for management reporting:
-
-- **Executive Overview**  
-  - Cards: Total Incidents, % Critical, Total Estimated Cost, SLA Breach Rate.
-
-- **Incident Types vs Severity**  
-  - Stacked column chart: `Incident_Type` on X, incident count split by `Severity`.
-
-- **Trend Over Time**  
-  - Line chart: incidents per month (use `Year` + `Month`).
-
-- **MTTD / MTTR by Severity**  
-  - Clustered bar or line: average detection / containment / resolution time per Severity.
-
-- **By Department / Region**  
-  - Bar chart of incidents by department.  
-  - Map or bar chart by Region (Luxembourg, Belgium, France, Germany).
-
-- **Top 10 Most Expensive Incidents**  
-  - Table sorted by `Estimated_Cost_EUR`, include Severity, Business_Impact, Downtime_min.
+| Field                  | Description                                        |
+|------------------------|----------------------------------------------------|
+| `Incident_ID`          | Unique incident identifier                         |
+| `Date_Incident`        | Datetime of incident detection/logging             |
+| `Region`               | Region or country                                  |
+| `Department_Affected`  | Impacted department                                |
+| `Asset_Type`           | Type of impacted asset                             |
+| `Incident_Type`        | Normalized incident category                       |
+| `Severity`             | Low / Medium / High / Critical                     |
+| `Priority`             | Standardized P1–P4 priority                        |
+| `Time_to_Detect_min`   | Minutes to detect                                  |
+| `Time_to_Contain_min`  | Minutes to contain                                 |
+| `Time_to_Resolve_min`  | Minutes to fully resolve                           |
+| `Resolve_Hours`        | Derived resolution time in hours                   |
+| `Downtime_min`         | Total business downtime in minutes                 |
+| `Estimated_Cost_EUR`   | Estimated cost in EUR (integer)                    |
+| `Business_Impact`      | Business impact level                              |
+| `Root_Cause`           | Underlying cause of incident                       |
+| `Data_Sensitivity`     | Data classification level                          |
+| `SLA_Breached`         | SLA breach flag (Yes/No/Unknown)                   |
+| `Is_Critical`          | 1 if Severity = Critical, else 0                   |
+| `Year`                 | Year extracted from `Date_Incident`                |
+| `Month`                | Month name extracted from `Date_Incident`          |
 
 ---
 
-## 🧩 Insights and Recommendations
+## 🧩 Architecture Diagram (Pipeline)
 
-### Key Findings
-1. **Phishing** incidents are frequent (around ~28% of cases) but are typically Low/Medium severity. They rarely create long downtime, but they occur so often that they consume analyst time.  
-2. **Ransomware** and **Data Exfiltration** are rare (<10% of incident count) but represent a disproportionate share of total estimated cost and have the longest resolution times (often > 48h).  
-3. **IT and Finance** are the most exposed departments for High/Critical incidents, suggesting targeted attacks on sensitive systems and financial data.  
-4. The **SLA breach rate (~25%)** is concentrated in High and Critical incidents, where containment and resolution take significantly longer. This is where business risk is highest.  
-5. **Automated detection sources** (SIEM, IDS/IPS, EDR) are significantly faster than manual user reports — Mean Time To Detect is roughly 40% lower.  
-6. A meaningful share of incidents (~15%) is driven by **Misconfiguration / Human error**, which means internal process maturity is as important as “external attackers”.
+Below is a high-level view of the data pipeline from raw CSV to BI-ready dataset and dashboard.
 
-### Recommendations
-1. **Security awareness and phishing simulations** to reduce incident volume caused by end users.  
-2. **Backup and recovery drills** for ransomware: test restore times and backup integrity to reduce downtime and financial impact.  
-3. **Extend automated detection coverage** (EDR/SIEM/IDS) especially on Finance and IT assets to reduce MTTD.  
-4. **Improve configuration and patch management**:  
-   - monthly vulnerability scans,  
-   - privilege / access reviews,  
-   - stricter change control in production.  
-5. **Track MTTR (Time_to_Resolve_min)** per Incident_Type and Severity as an operational KPI for management.  
-6. **Set 6‑month governance targets**:  
-   - SLA breach rate < 15%,  
-   - -20% average incident cost,  
-   - fewer misconfiguration-related incidents via tighter process control.
+```mermaid
+flowchart LR
+    A[Raw CSV<br/>data/raw_cyber_incidents.csv] --> B[Power Query ETL<br/>(PowerQuery_Cleaning_Steps.m)]
+    B --> C[Cleaned CSV<br/>data/clean_cyber_incidents.csv]
+    C --> D[Power BI Model<br/>(Fact table)]
+    D --> E[Dashboards<br/>Executive / Operational / Risk]
+```
 
-### Future Work
-- Add simple predictive modelling (e.g. decision tree) to flag incidents most likely to become Critical.  
-- Track trends quarter-over-quarter to measure if actions are reducing risk.  
-- Join with vulnerability scan data (CVE severity, open findings) to tie known weaknesses to realized business impact.
+**Stages:**
+
+1. **Source** — Synthetic incidents stored as a flat CSV.  
+2. **ETL (Power Query)** — All cleaning, normalization and enrichment applied.  
+3. **Cleaned Layer** — Single fact-like table ready for BI tools.  
+4. **Analytics Layer (Power BI)** — Visual dashboards (KPIs, trends, cost, risk).  
 
 ---
 
-*All data in this repository is fully synthetic and generated for educational and portfolio demonstration purposes only.*
+## 📊 Power BI Dashboard — Planned (To Do)
+
+### 🟦 Page 1 — Executive Overview
+- Total number of incidents  
+- % Critical incidents  
+- SLA breach rate  
+- Total estimated cost (EUR)  
+- Incident trend by month & year  
+
+### 🟨 Page 2 — Operational Insights
+- Incidents by type and severity  
+- MTTR (Mean Time To Resolve) by severity  
+- MTTD (Mean Time To Detect) / MTTC (Mean Time To Contain)  
+- Detection source breakdown (tool vs user-reported)  
+- Top 10 costliest incidents  
+
+### 🟥 Page 3 — Risk & Governance
+- Business impact distribution by department/region  
+- Downtime vs severity / incident type  
+- SLA breaches vs priority / severity  
+- Critical incident clustering / patterns  
+
+**Dashboard files (To Do):**
+
+- `dashboard/cybersecurity_dashboard.pbix`  
+- `dashboard/screenshots/` (key visual exports)
+
+---
+
+## 💡 Insights & Recommendations (Conceptual)
+
+These insights are examples of what the cleaned dataset and future Power BI dashboard are designed to surface. They illustrate how this pipeline can support IT / security decision-making:
+
+### Example Insights (based on typical patterns)
+
+- **Critical incidents are often linked to specific incident types**  
+  e.g. Ransomware, Data Exfiltration or Unauthorized Access drive a disproportionate share of `Critical` severity cases.
+
+- **User-reported incidents tend to have higher MTTD**  
+  Incidents detected via “User Report” usually take longer to detect compared to SIEM/EDR, which can increase SLA breach risk.
+
+- **A small number of incidents may drive most of the cost**  
+  Top 5–10 incidents (by `Estimated_Cost_EUR`) often represent a significant share of the total impact (Pareto-style pattern).
+
+- **Some departments or regions are repeatedly over-represented**  
+  Higher incident counts or critical incidents might cluster in specific departments (e.g. Operations / Finance) or regions.
+
+- **Configuration and patching issues can be recurring root causes**  
+  “Misconfiguration” or “Unpatched Vulnerability” may appear frequently in `Root_Cause`, especially for high-cost incidents.
+
+### Recommendations (conceptual)
+
+- **Improve early detection**  
+  - Strengthen SIEM / EDR rules for top incident types (e.g. phishing, malware).  
+  - Reduce reliance on user-only reports for critical incident types.
+
+- **Focus on high-impact segments**  
+  - Prioritize hardening and awareness in departments/regions with repeated high-severity incidents.  
+  - Define targeted training for users in high-risk areas.
+
+- **Reduce SLA breaches**  
+  - Monitor MTTD and MTTR for P1/P2 to ensure they stay within defined thresholds.  
+  - Implement playbooks to accelerate containment and resolution for critical categories.
+
+- **Use this dataset as a template**  
+  - Extend the model with real logs and ITSM exports (e.g. ServiceNow, Jira, etc.).  
+  - Add more tables (assets, vulnerabilities, controls) for deeper risk analysis.
+
+---
+
+## 🗂️ Kanban-Style To Do / Done
+
+| Status | Item | Details |
+|--------|------|---------|
+| ✅ Done | Synthetic raw dataset | Generated `data/raw_cyber_incidents.csv` |
+| ✅ Done | ETL via Power Query | Implemented in `powerquery/PowerQuery_Cleaning_Steps.m` |
+| ✅ Done | Cleaned dataset | Exported `data/clean_cyber_incidents.csv` |
+| ✅ Done | Repo documentation | This README (ETL, structure, roadmap) |
+| ⏳ To Do | Build Power BI dashboard | Create `dashboard/cybersecurity_dashboard.pbix` |
+| ⏳ To Do | Add screenshots | Save key visuals in `dashboard/screenshots/` |
+| ⏳ To Do | Insights & recommendations (final) | Refine based on actual dashboard metrics |
+| ⏳ To Do | Optional Python validation | Add a notebook to validate ETL with pandas |
+
+---
+
+## 🔮 Roadmap
+
+- [x] Generate synthetic raw dataset  
+- [x] Build Power Query ETL pipeline  
+- [x] Export cleaned dataset  
+- [x] Document ETL, data dictionary and architecture  
+- [ ] Build Power BI dashboard (3 pages)  
+- [ ] Add screenshots of key visuals  
+- [ ] Write final “Insights & Recommendations” based on actual visuals  
+- [ ] (Optional) Add Python notebook to validate metrics and spot-check data  
+
+---
+
+## 📅 Update Log
+
+**2025-11-16**  
+- Added cleaned dataset (`data/clean_cyber_incidents.csv`)  
+- Normalized data folder structure  
+- Documented ETL pipeline, data dictionary & architecture  
+- Added dashboard plan, insights section & Kanban-style roadmap  
+
+**2025-10-25**  
+- Initial commit (`raw_cyber_incidents.csv` + Power Query script)
+
+---
+
+## 📄 License  
+
+MIT License  
+
+---
+
+🟣 _All data in this repository is synthetic and intended solely for training, portfolio building, and interview preparation (no real incidents or sensitive information)._
+
+
+
