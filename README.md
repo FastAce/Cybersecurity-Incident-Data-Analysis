@@ -154,10 +154,10 @@ Below is a high-level view of the data pipeline from raw CSV to BI-ready dataset
 
 ```mermaid
 flowchart LR
-    A[Raw CSV<br/>data/raw_cyber_incidents.csv] --> B[Power Query ETL<br/>(PowerQuery_Cleaning_Steps.m)]
-    B --> C[Cleaned CSV<br/>data/clean_cyber_incidents.csv]
-    C --> D[Power BI Model<br/>(Fact table)]
-    D --> E[Dashboards<br/>Executive / Operational / Risk]
+    A[Raw CSV:\ndata/raw_cyber_incidents.csv] --> B[Power Query ETL:\nPowerQuery_Cleaning_Steps.m]
+    B --> C[Cleaned CSV:\ndata/clean_cyber_incidents.csv]
+    C --> D[Power BI Model:\nFact Table]
+    D --> E[Dashboards:\nExecutive / Operational / Risk]
 ```
 
 **Stages:**
